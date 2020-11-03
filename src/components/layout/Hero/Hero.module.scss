@@ -3,24 +3,23 @@
 .root {
   background-color: $color-hero;
 
-
   :global(.container)> :global(.row) {
     height: 700px;
     background-image: url("https://i.postimg.cc/LsJRCKzQ/header.jpg");
     background-size: cover;
+    margin-bottom: 100px;
   }
 
   .titles {
-    width: 300px;
-    padding-bottom: 350px;
-    margin-right: 60px;
+    max-width: 380px;
+    padding-bottom: 300px;
   }
 
   .subtitle {
     color: $color-header-text-2;
     font-size: 26px;
     font-weight: bold;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
   }
 
   .title {
@@ -31,7 +30,7 @@
   }
 
   .description {
-    padding-bottom: 280px;
+    padding-bottom: 230px;
     margin-right: 80px;
     width: 300px;
     font-size: 18px;

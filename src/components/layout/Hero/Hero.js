@@ -1,16 +1,12 @@
 import React from 'react';
-// import PropTypes from 'prop-types';
 
 import styles from './Hero.module.scss';
-
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-
 
 const Hero = () => (
   <div className={styles.root}>
     <div className='container '>
       <div className='row align-items-center justify-content-end'>
-        <div className={`column ${styles.titles}`}>
+        <div className={`col ${styles.titles}`}>
           <div className={styles.subtitle}>Go green.</div>
           <div className={styles.title}>The world of plants</div>
         </div>

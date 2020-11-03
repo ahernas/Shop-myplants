@@ -1,0 +1,38 @@
+@import "../../../styles/settings.scss";
+
+.title {
+  color: $color-header-text;
+  font-size: 30px;
+  font-weight: bold;
+  width: 60%;
+  line-height: 30px;
+  padding-bottom: 20px;
+}
+
+.description {
+  padding-bottom: 20px;
+}
+
+.buttonArrow {
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: $color-header-text;
+
+  span {
+    padding-right: 10px;
+  }
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.imageBox1 {
+  background-color: $color-button;
+  height: 250px;
+}
+
+.imageBox2 {
+  border: 20px solid $color-button;
+  height: 250px;
+}

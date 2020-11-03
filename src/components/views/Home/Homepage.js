@@ -1,14 +1,11 @@
 import React from 'react';
-// import { Container } from 'reactstrap';
+import styles from './Homepage.module.scss';
 
-// import PromoCarousel from './../../features/PromoCarousel/PromoCarousel';
-// import Lineup from './../../features/Lineup/LineupContainer';
+import NewsBox from '../../features/NewsBox/NewsBoxContainer';
 
 const HomePage = () => (
-  <div>
-    {/*<Container>*/}
-    {/*<h1>Hello world</h1>*/}
-    {/*</Container>*/}
+  <div className={styles.root}>
+    <NewsBox />
   </div>
 );
 

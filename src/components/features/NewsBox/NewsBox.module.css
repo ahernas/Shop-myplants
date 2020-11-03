@@ -1,0 +1,37 @@
+.title {
+  color: #1c2d33;
+  font-size: 30px;
+  font-weight: bold;
+  width: 60%;
+  line-height: 30px;
+  padding-bottom: 20px;
+}
+
+.description {
+  padding-bottom: 20px;
+}
+
+.buttonArrow {
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #1c2d33;
+}
+.buttonArrow span {
+  padding-right: 10px;
+}
+.buttonArrow:hover {
+  text-decoration: none;
+}
+
+.imageBox1 {
+  background-color: #e5e9ea;
+  height: 250px;
+}
+
+.imageBox2 {
+  border: 20px solid #e5e9ea;
+  height: 250px;
+}
+
+/*# sourceMappingURL=NewsBox.module.css.map */
