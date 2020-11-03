@@ -1,0 +1,53 @@
+@import "../../../styles/settings.scss";
+
+// .root {
+// }
+
+.main {
+  background-color: $footer-claim-bg;
+  color: $main-light;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+  padding: 10px 30px;
+
+  &:not(.noHover):hover {
+    color: $main-light !important;
+    background-color: $primary;
+    text-decoration: none;
+    @extend %hoverAnimation;
+  }
+}
+
+.small {
+  @extend .main;
+  font-size: 13px;
+  line-height: 24px;
+  padding: 5px 10px;
+  font-weight: 400;
+}
+
+.outline {
+  display: inline-block;
+  padding: 5px 10px;
+  border: 1px solid $footer-claim-bg;
+  color: $colorDark;
+  font-size: 13px;
+  line-height: 22px;
+
+  &:not(.noHover):hover {
+    background-color: $footer-claim-bg;
+    color: $main-light;
+    @extend %hoverAnimation;
+  }
+
+  &.active {
+    background-color: $primary;
+    color: #ffffff;
+  }
+
+  &.active {
+    background-color: $primary;
+    color: #ffffff;
+  }
+}

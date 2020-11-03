@@ -1,0 +1,54 @@
+.root ul li a:hover {
+  transition: background-color 250ms linear, color 250ms linear, border-color 250ms linear;
+  transform: translate(0, 0);
+}
+
+.root {
+  background-color: #dae4e5;
+}
+.root ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.root ul li {
+  display: inline-block;
+  line-height: 55px;
+}
+.root ul li a {
+  color: #1c2d33;
+  font-size: 20px;
+}
+.root ul li a:hover {
+  color: #7fa191;
+  text-decoration: none;
+}
+.root .topMenu ul li {
+  margin-left: 1.5rem;
+}
+.root .topMenu ul li .icon {
+  margin-right: 5px;
+}
+.root .companyName {
+  font-size: 25px;
+  font-weight: bold;
+  color: #7fa191;
+}
+.root .companyLogo img {
+  width: 80px;
+  height: 80px;
+}
+
+@media (max-width: 768px) {
+  .root span {
+    display: none;
+  }
+  .root .topMenu ul li {
+    margin-left: 10px;
+  }
+  .root .topMenu ul li .icon {
+    margin-right: 2px;
+  }
+}
+
+/*# sourceMappingURL=TopBar.module.css.map */

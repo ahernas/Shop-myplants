@@ -1,0 +1,63 @@
+$base-size: 14px;
+$base-padding: 24px;
+
+// COLORS
+$color-hero: #dae4e5;
+$color-header-text: #1c2d33;
+$color-header-text-2: #7fa191;
+$color-text: #000000;
+$color-light-text: #ffffff;
+$color-dark-blue: #81b2cb;
+$color-light-blue: #abc7dc;
+$color-dark-green: #8bb6c0;
+$color-light-green: #bcd9d9;
+$color-background: #bdd3e5;
+$color-button: #e5e9ea;
+$color-button-text: #75818b;
+$color-button-hover: #485256;
+
+
+// VARIABLES ONLY FOR USE IN SETTINGS
+$colorDark : #2a2a2a;
+$colorPrimary: #d58e32;
+$colorGray: #434343;
+$colorDarkGray: #363636;
+$colorLightGray: #b6b6b6;
+$colorSoftGray: #e1e1e1;
+$colorLight: #ffffff;
+$bgColorLight: #f4f5f7;
+$bgDarkColor: #292929;
+$mega-dark-gray: #292929;
+$white: #ffffff;
+
+// VARIABLES WICH WE USE IN COMPONENTS
+$main-light: $colorLight;
+
+$header-topbar-bg: $colorGray;
+$header-bg: $colorDarkGray;
+
+$product-box-bg-color-light: $bgColorLight;
+$product-box-bg-color-dark: $bgDarkColor;
+
+$footer-claim-bg: $colorDark;
+$footer-bg: $colorDarkGray;
+
+$primary: $colorPrimary;
+
+$text-color: $colorDark;
+
+$form-border-color: $colorGray;
+$form-border-color-gray: $colorLightGray;
+$form-border-color-soft: $colorSoftGray;
+
+
+//HOVER ANIMATIONS
+//variables
+$background-color-transition: 250ms;
+$color-transition: 250ms;
+$border-color-transition: 250ms;
+
+%hoverAnimation {
+  transition: background-color $background-color-transition linear, color $color-transition linear, border-color $border-color-transition linear;
+  transform: translate(0, 0);
+}
