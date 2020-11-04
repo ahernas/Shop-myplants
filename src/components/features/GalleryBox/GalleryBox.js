@@ -11,7 +11,7 @@ class GalleryBox extends React.Component {
   render() {
 
     return (
-      <div className='container mb-5'>
+      <div className='container'>
         <div className='row'>
           <div className={'col-6 p-0 ' + styles.box1}/>
           <div className={'col-3 p-0 d-flex ' + styles.box2}>

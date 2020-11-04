@@ -92,7 +92,6 @@ const Footer = ({ children }) => (
                 </li>
               </ul>
             </div>
-            <img src='./images/cards.png' alt='Supported credit cards' />
           </div>
         </div>
       </div>
@@ -103,7 +102,7 @@ const Footer = ({ children }) => (
           <div className='col-sm-12 col-md-4 empty'></div>
           <div className={'col-sm-6 col-md-4 text-center ' + styles.copyright}>
             <p className={styles.copyrightParagraph}>
-              ©Copyright 2016 Bazar | All Rights Reserved
+              ©Copyright by Anna Hernas | All Rights Reserved
             </p>
           </div>
           <div className={'col-sm-6 col-md-4 text-right ' + styles.socialMedia}>

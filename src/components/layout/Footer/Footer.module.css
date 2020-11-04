@@ -1,5 +1,5 @@
 .root .footerMenu {
-  background-color: black;
+  background-color: #1c2d33;
   padding: 3rem 0;
 }
 .root .footerMenu .menuWrapper h6 {
@@ -15,28 +15,20 @@
 .root .footerMenu .menuWrapper ul li a {
   font-size: 14px;
   line-height: 30px;
-  color: #b6b6b6;
+  color: #ffffff;
 }
 .root .footerMenu .menuWrapper ul li a:hover {
   color: #ffffff;
 }
-.root .footerMenu .paymentMethods {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-.root .footerMenu .paymentMethods li {
-  display: inline-block;
-}
 .root .bottomBar {
-  background-color: #2a2a2a;
+  background-color: #dae4e5;
 }
 .root .bottomBar :global(.container) > :global(.row) {
   height: 95px;
 }
 .root .bottomBar .copyright p {
   margin: 0;
-  color: #b6b6b6;
+  color: #1c2d33;
   font-size: 14px;
   line-height: 26px;
 }
@@ -50,11 +42,11 @@
   margin-left: 1rem;
 }
 .root .bottomBar .socialMedia ul li a {
-  color: #b6b6b6;
+  color: #1c2d33;
   text-decoration: none;
 }
 .root .bottomBar .socialMedia ul li a:hover {
-  color: #d58e32;
+  color: #8bb6c0;
 }
 
 Footer .menuBox {

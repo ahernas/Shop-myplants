@@ -1,0 +1,32 @@
+.box {
+  background-color: #bdd3e5;
+  height: 400px;
+}
+
+.boxText {
+  line-height: 40px;
+}
+.boxText .title {
+  text-transform: uppercase;
+}
+.boxText .title p {
+  font-weight: bolder;
+  font-size: 50px;
+}
+.boxText .title span {
+  margin-left: 10px;
+  font-size: 30px;
+}
+.boxText .percent {
+  font-size: 30px;
+}
+.boxText .percent span {
+  font-weight: bold;
+}
+
+.boxImage img {
+  width: 350px;
+  height: 400px;
+}
+
+/*# sourceMappingURL=SpecialPriceBox.module.css.map */

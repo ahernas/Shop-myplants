@@ -2,12 +2,12 @@
 
 .root {
   .footerMenu {
-    background-color: black;
+    background-color: $color-header-text;
     padding: 3rem 0;
 
     .menuWrapper {
       h6 {
-        color: $main-light;
+        color: $color-light-text;
         text-transform: uppercase;
         margin: 0 0 1rem 0;
       }
@@ -21,29 +21,19 @@
           a {
             font-size: 14px;
             line-height: 30px;
-            color: $form-border-color-gray;
+            color: $color-light-text;
 
             &:hover {
-              color: $main-light;
+              color: $color-light-text;
             }
           }
         }
       }
     }
-
-    .paymentMethods {
-      margin: 0;
-      padding: 0;
-      list-style: none;
-
-      li {
-        display: inline-block;
-      }
-    }
   }
 
   .bottomBar {
-    background-color: $footer-claim-bg;
+    background-color: $color-hero;
 
     :global(.container)> :global(.row) {
       height: 95px;
@@ -52,7 +42,7 @@
     .copyright {
       p {
         margin: 0;
-        color: $form-border-color-gray;
+        color: $color-header-text;
         font-size: 14px;
         line-height: 26px;
       }
@@ -69,11 +59,11 @@
           margin-left: 1rem;
 
           a {
-            color: $form-border-color-gray;
+            color: $color-header-text;
             text-decoration: none;
 
             &:hover {
-              color: $primary;
+              color: $color-dark-blue;
             }
           }
         }

@@ -4,16 +4,17 @@
 // }
 
 .main {
-  background-color: $footer-claim-bg;
-  color: $main-light;
+  background-color: $color-button;
+  border-radius: 5px;
+  color: $color-button-text;
   font-size: 16px;
   line-height: 24px;
   font-weight: 600;
   padding: 10px 30px;
 
   &:not(.noHover):hover {
-    color: $main-light !important;
-    background-color: $primary;
+    color: $color-light-text !important;
+    background-color: $color-button-hover;
     text-decoration: none;
     @extend %hoverAnimation;
   }
@@ -28,26 +29,28 @@
 }
 
 .outline {
+  border-radius: 5px;
   display: inline-block;
   padding: 5px 10px;
-  border: 1px solid $footer-claim-bg;
-  color: $colorDark;
+  border: 1px solid $color-button-hover;
+  color: $color-header-text;
   font-size: 13px;
   line-height: 22px;
 
   &:not(.noHover):hover {
-    background-color: $footer-claim-bg;
-    color: $main-light;
+    text-decoration: none;
+    background-color: $color-button-hover;
+    color: $color-light-text;
     @extend %hoverAnimation;
   }
 
   &.active {
-    background-color: $primary;
-    color: #ffffff;
+    background-color: $color-button-hover;
+    color: $color-light-text;
   }
 
   &.active {
-    background-color: $primary;
-    color: #ffffff;
+    background-color: $color-button-hover;
+    color: $color-light-text;
   }
 }
