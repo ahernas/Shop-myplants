@@ -1,0 +1,46 @@
+.box {
+  width: 285px;
+}
+
+.image img {
+  max-width: 285px;
+}
+
+.fontHeart {
+  font-size: 30px;
+  color: #e5e9ea;
+}
+.fontHeart:hover {
+  color: #485256;
+}
+
+.backgroundPlus {
+  background-color: #e5e9ea;
+  border-radius: 40px;
+  width: 45px;
+  height: 45px;
+}
+.backgroundPlus .fontPlus {
+  font-size: 20px;
+  color: #75818b;
+}
+.backgroundPlus:hover {
+  background-color: #485256;
+}
+.backgroundPlus:hover .fontPlus {
+  color: #ffffff;
+}
+
+.information {
+  flex-direction: column;
+  color: #ffffff;
+}
+.information .name {
+  font-size: 20px;
+  font-weight: bold;
+}
+.information .price {
+  font-size: 15px;
+}
+
+/*# sourceMappingURL=ProoductBox.module.css.map */

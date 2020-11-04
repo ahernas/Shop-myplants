@@ -1,0 +1,55 @@
+@import "../../../styles/settings.scss";
+
+.box {
+  width: 285px;
+}
+
+.image {
+  img {
+    max-width: 285px;
+  }
+}
+
+.fontHeart {
+  font-size: 30px;
+  color: $color-button;
+
+  &:hover {
+    color: $color-button-hover;
+  }
+}
+
+.backgroundPlus {
+  background-color: $color-button;
+  border-radius: 40px;
+  width: 45px;
+  height: 45px;
+
+  .fontPlus {
+    font-size: 20px;
+    color: $color-button-text;
+  }
+
+  &:hover {
+    background-color: $color-button-hover;
+    .fontPlus {
+      color: $color-light-text;
+    }
+  }
+}
+
+.information {
+  flex-direction: column;
+  color: $color-light-text;
+
+  .name {
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .price {
+    font-size: 15px;
+  }
+
+}
+

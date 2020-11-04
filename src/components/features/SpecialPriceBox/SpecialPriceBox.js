@@ -8,7 +8,7 @@ class SpecialPriceBox extends React.Component {
   render() {
 
     return (
-      <div className='container'>
+      <div className='container mt-5'>
         <div className={'row d-flex justify-content-around align-items-center ' + styles.box}>
           <div className={styles.boxText}>
             <div className={styles.title}>

@@ -33,12 +33,12 @@
   text-transform: uppercase;
   font-weight: bold;
   color: #ffffff;
-  background-color: #7ea497;
+  background-color: #8bb6c0;
   flex: 3.5;
   font-size: 24px;
 }
 .box2 .text1:hover {
-  background-color: #8bb6c0;
+  background-color: #7ea497;
   transition: 1s;
 }
 .box2 .image2 {
