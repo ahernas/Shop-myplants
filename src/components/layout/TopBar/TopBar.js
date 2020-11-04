@@ -70,7 +70,7 @@ class TopBar extends React.Component {
 }
 
 TopBar.propTypes = {
-  company: PropTypes.array,
+  company: PropTypes.object,
 };
 
 export default TopBar;

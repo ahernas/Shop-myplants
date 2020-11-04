@@ -51,7 +51,7 @@ class NewsBox extends React.Component {
 }
 
 NewsBox.propTypes = {
-  news: PropTypes.array,
+  news: PropTypes.object,
 };
 
 export default NewsBox;
