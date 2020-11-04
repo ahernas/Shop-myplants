@@ -1,35 +1,28 @@
 .root {
-  background-color: #dae4e5;
+  background-color: #c1e0df;
 }
 .root :global(.container) > :global(.row) {
-  height: 700px;
-  background-image: url("https://i.postimg.cc/LsJRCKzQ/header.jpg");
+  height: 600px;
+  background-image: url("https://i.postimg.cc/zXpvpxMB/header22.png");
   background-size: cover;
   margin-bottom: 100px;
 }
 .root .titles {
   max-width: 380px;
+  margin-left: 200px;
   padding-bottom: 300px;
 }
 .root .subtitle {
   color: #7fa191;
-  font-size: 26px;
+  font-size: 46px;
   font-weight: bold;
   margin-bottom: 20px;
 }
 .root .title {
   color: #1c2d33;
   font-weight: bolder;
-  font-size: 60px;
-  line-height: 60px;
-}
-.root .description {
-  padding-bottom: 230px;
-  margin-right: 80px;
-  width: 300px;
-  font-size: 18px;
-  color: #000000;
-  line-height: 30px;
+  font-size: 90px;
+  line-height: 70px;
 }
 
 @media (max-width: 767px) {

@@ -4,20 +4,21 @@
   background-color: $color-hero;
 
   :global(.container)> :global(.row) {
-    height: 700px;
-    background-image: url("https://i.postimg.cc/LsJRCKzQ/header.jpg");
+    height: 600px;
+    background-image: url("https://i.postimg.cc/zXpvpxMB/header22.png");
     background-size: cover;
     margin-bottom: 100px;
   }
 
   .titles {
     max-width: 380px;
+    margin-left: 200px;
     padding-bottom: 300px;
   }
 
   .subtitle {
     color: $color-header-text-2;
-    font-size: 26px;
+    font-size: 46px;
     font-weight: bold;
     margin-bottom: 20px;
   }
@@ -25,17 +26,8 @@
   .title {
     color: $color-header-text;
     font-weight: bolder;
-    font-size: 60px;
-    line-height: 60px;
-  }
-
-  .description {
-    padding-bottom: 230px;
-    margin-right: 80px;
-    width: 300px;
-    font-size: 18px;
-    color: $color-text;
-    line-height: 30px;
+    font-size: 90px;
+    line-height: 70px;
   }
 }
 
