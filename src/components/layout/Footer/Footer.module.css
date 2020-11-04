@@ -21,7 +21,7 @@
   color: #ffffff;
 }
 .root .bottomBar {
-  background-color: #c1e0df;
+  background-color: #e5e9ea;
 }
 .root .bottomBar :global(.container) > :global(.row) {
   height: 95px;
