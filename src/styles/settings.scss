@@ -7,10 +7,10 @@ $color-header-text: #1c2d33;
 $color-header-text-2: #7fa191;
 $color-text: #000000;
 $color-light-text: #ffffff;
-$color-dark-blue: #81b2cb;
+$color-dark-blue: #8bb6c0;
 $color-light-blue: #abc7dc;
-$color-dark-green: #8bb6c0;
-$color-light-green: #bcd9d9;
+$color-dark-green: #7ea497;
+$color-light-green: #8fbdb3;;
 $color-background: #bdd3e5;
 $color-button: #e5e9ea;
 $color-button-text: #75818b;
@@ -60,4 +60,15 @@ $border-color-transition: 250ms;
 %hoverAnimation {
   transition: background-color $background-color-transition linear, color $color-transition linear, border-color $border-color-transition linear;
   transform: translate(0, 0);
+}
+
+%backgroundAnimatable {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  content: '';
+  transition: opacity 1.5s ease-in-out;
 }

@@ -1,0 +1,90 @@
+.box1:after {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  content: "";
+  transition: opacity 1.5s ease-in-out;
+}
+
+.box1 {
+  height: 700px;
+  background-image: url("https://i.postimg.cc/ydHwMn9g/d4b0367636435c8ada859eec2aa73fc9.jpg");
+  background-size: cover;
+  padding: 0;
+  position: relative;
+}
+.box1:after {
+  background-image: url("https://i.postimg.cc/tTFk35nk/911511b3168bdec2841bda65d7d54948.jpg");
+}
+.box1:hover:after {
+  opacity: 1;
+}
+
+.box2 {
+  height: 700px;
+  padding: 0;
+  flex-direction: column;
+  transition: 0.5s;
+}
+.box2 .text1 {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #7ea497;
+  flex: 3.5;
+  font-size: 24px;
+}
+.box2 .text1:hover {
+  background-color: #8bb6c0;
+  transition: 1s;
+}
+.box2 .image2 {
+  background-image: url("https://i.postimg.cc/wMVHfZGj/192347e303ea4621818b33d4f138832e.jpg");
+  flex: 2.5;
+  background-size: cover;
+}
+.box2 .image2:hover {
+  background-image: url("https://i.postimg.cc/7hwMrtqR/prze.jpg");
+  transition: 1.5s;
+}
+
+.box3 {
+  height: 700px;
+  padding: 0;
+  flex-direction: column;
+}
+.box3 .image3 {
+  background-image: url("https://i.postimg.cc/d3xhLMQx/0b68579d142267afc0f6578084cf8aff.jpg");
+  flex: 2;
+  background-size: cover;
+}
+.box3 .image3:hover {
+  background-image: url("https://i.postimg.cc/W16ZT1q9/ccc0cc7a2313e3502f1e06208d2fbba0.jpg");
+  transition: 1.5s;
+}
+.box3 .image4 {
+  background-image: url("https://i.postimg.cc/7L00dLPY/45a501c4a72d3c7e266f6a4ba7a915e1.jpg");
+  flex: 3;
+  background-size: cover;
+}
+.box3 .image4:hover {
+  background-image: url("https://i.postimg.cc/mgtkk3D6/prze.jpg");
+  transition: 1.5s;
+}
+.box3 .text2 {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #8fbdb3;
+  flex: 1;
+  font-size: 30px;
+}
+.box3 .text2:hover {
+  background-color: #abc7dc;
+  transition: 1s;
+}
+
+/*# sourceMappingURL=GalleryBox.module.css.map */

@@ -1,0 +1,93 @@
+@import "../../../styles/settings.scss";
+
+.box1 {
+  height: 700px;
+  background-image: url("https://i.postimg.cc/ydHwMn9g/d4b0367636435c8ada859eec2aa73fc9.jpg");
+  background-size: cover;
+  padding: 0;
+  position: relative;
+
+  &:after {
+    @extend %backgroundAnimatable;
+    background-image: url("https://i.postimg.cc/tTFk35nk/911511b3168bdec2841bda65d7d54948.jpg");
+  }
+
+  &:hover:after {
+    opacity: 1;
+  }
+}
+
+.box2 {
+  height: 700px;
+  padding: 0;
+  flex-direction: column;
+  transition: 0.5s;
+
+  .text1 {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: $color-light-text;
+    background-color: $color-dark-green;
+    flex: 3.5;
+    font-size: 24px;
+
+    &:hover {
+      background-color: $color-dark-blue;
+      transition: 1s;
+    }
+  }
+
+  .image2 {
+    background-image: url("https://i.postimg.cc/wMVHfZGj/192347e303ea4621818b33d4f138832e.jpg");
+    flex: 2.5;
+    background-size: cover;
+
+    &:hover {
+      background-image: url("https://i.postimg.cc/7hwMrtqR/prze.jpg");
+      transition: 1.5s;
+    }
+  }
+}
+
+.box3 {
+  height: 700px;
+  padding: 0;
+  flex-direction: column;
+
+  .image3 {
+    background-image: url("https://i.postimg.cc/d3xhLMQx/0b68579d142267afc0f6578084cf8aff.jpg");
+    flex: 2;
+    background-size: cover;
+
+    &:hover {
+      background-image: url("https://i.postimg.cc/W16ZT1q9/ccc0cc7a2313e3502f1e06208d2fbba0.jpg");
+      transition: 1.5s;
+    }
+  }
+
+  .image4 {
+    background-image: url("https://i.postimg.cc/7L00dLPY/45a501c4a72d3c7e266f6a4ba7a915e1.jpg");
+    flex: 3;
+    background-size: cover;
+
+    &:hover {
+      background-image: url("https://i.postimg.cc/mgtkk3D6/prze.jpg");
+      transition: 1.5s;
+    }
+  }
+
+  .text2 {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: $color-light-text;
+    background-color: $color-light-green;
+    flex: 1;
+    font-size: 30px;
+
+    &:hover {
+      background-color: $color-light-blue;
+      transition: 1s;
+    }
+  }
+}
+
