@@ -8,6 +8,7 @@ import './styles/global.scss';
 
 import {MainLayout} from './components/layout/MainLayout/MainLayout';
 import Homepage from './components/views/Home/Homepage';
+import ProductsPage from './components/views/Products/ProductsPage';
 // import NotFound from './components/pages/NotFound/NotFoundPage';
 // import Prices from './components/pages/Prices/PricesPage';
 // import Order from './components/pages/Order/OrderPage.js';
@@ -21,7 +22,7 @@ class App extends React.Component {
           <MainLayout>
             <Switch>
               <Route path="/" exact component={Homepage} />
-              {/*<Route path="/prices" exact component={Prices} />*/}
+              <Route path="/products" exact component={ProductsPage} />
               {/*<Route path="/order-a-ticket" exact component={Order} />*/}
               {/*<Route component={NotFound} />*/}
             </Switch>

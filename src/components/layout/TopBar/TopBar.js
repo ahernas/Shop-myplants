@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import {NavLink} from 'reactstrap';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUser, faShoppingCart } from '@fortawesome/free-solid-svg-icons';
@@ -7,6 +8,7 @@ import { faUser, faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 import styles from './TopBar.module.scss';
 
 class TopBar extends React.Component {
+
 
   render() {
     const {company} = this.props;
@@ -25,39 +27,29 @@ class TopBar extends React.Component {
               <div className={`col-4 text-right col-sm text-right  ${styles.topMenu}`}>
                 <ul>
                   <li>
-                    <a href='/#'>
-                      <span>Home</span>
-                    </a>
+                    <NavLink href="/">Home</NavLink>
                   </li>
                   <li>
-                    <a href='/#'>
-                      <span>Products</span>
-                    </a>
+                    <NavLink href="/products">Products</NavLink>
                   </li>
                   <li>
-                    <a href='/#'>
-                      <span>Plant finder</span>
-                    </a>
+                    <NavLink href="/plantfinder">Plant finder</NavLink>
                   </li>
                   <li>
-                    <a href='/#'>
-                      <span>About us</span>
-                    </a>
+                    <NavLink href="/aboutus">About us</NavLink>
                   </li>
                   <li>
-                    <a href='/#'>
-                      <span>Contact</span>
-                    </a>
+                    <NavLink href="/contacts">Contact</NavLink>
                   </li>
                   <li>
-                    <a href='/#'>
+                    <NavLink href="/user">
                       <FontAwesomeIcon className={`icons ${styles.icon}`} icon={faUser}/>
-                    </a>
+                    </NavLink>
                   </li>
                   <li>
-                    <a href='/#'>
+                    <NavLink href="/cart">
                       <FontAwesomeIcon className={styles.icon} icon={faShoppingCart}/>
-                    </a>
+                    </NavLink>
                   </li>
                 </ul>
               </div>

@@ -13,9 +13,7 @@ const HomePage = () => (
     <GalleryBox/>
     <FeatureBoxes/>
     <SpecialPriceBox/>
-
     <ProductsWrapper/>
-
   </div>
 );
 

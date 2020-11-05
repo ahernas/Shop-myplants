@@ -1,0 +1,70 @@
+@import "../../../styles/settings.scss";
+.productViewContainer {
+
+  width: 1140px;
+  border-radius: 30px;
+  margin-bottom: 20px;
+  &:nth-child(4n) {
+    background-color: $color-dark-blue;
+  }
+  &:nth-child(4n + 1) {
+    background-color: $color-light-green;
+  }
+  &:nth-child(4n + 2) {
+    background-color: $color-light-blue;
+  }
+  &:nth-child(4n + 3) {
+    background-color: $color-dark-green;
+  }
+}
+
+.productView {
+
+  .information {
+    flex: 2;
+  }
+
+  .plant {
+    flex: 4;
+
+    .title {
+      color: $color-light-text;
+      font-size: 40px;
+      flex-wrap: wrap;
+      max-width: 200px;
+      line-height: 50px;
+    }
+
+    .button {
+      color: $color-light-text;
+      border-color: $color-light-text;
+    }
+
+    img {
+      margin-left: 30px;
+    }
+  }
+}
+
+.requirement {
+
+  .font {
+    font-size: 40px;
+    margin-right: 10px;
+    color: $color-button;
+  }
+
+  .boxText {
+
+    .parameter {
+      font-size: 18px;
+      color: $color-button;
+      text-transform: uppercase;
+    }
+
+    .property {
+      font-size: 22px;
+      color: $color-light-text;
+    }
+  }
+}

@@ -1,0 +1,11 @@
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.itemBox {
+  width: 1140px;
+}
+
+/*# sourceMappingURL=ProductsViewsWrapper.module.css.map */

@@ -1,0 +1,55 @@
+.productViewContainer {
+  width: 1140px;
+  border-radius: 30px;
+  margin-bottom: 20px;
+}
+.productViewContainer:nth-child(4n) {
+  background-color: #8bb6c0;
+}
+.productViewContainer:nth-child(4n+1) {
+  background-color: #8fbdb3;
+}
+.productViewContainer:nth-child(4n+2) {
+  background-color: #abc7dc;
+}
+.productViewContainer:nth-child(4n+3) {
+  background-color: #7ea497;
+}
+
+.productView .information {
+  flex: 2;
+}
+.productView .plant {
+  flex: 4;
+}
+.productView .plant .title {
+  color: #ffffff;
+  font-size: 40px;
+  flex-wrap: wrap;
+  max-width: 200px;
+  line-height: 50px;
+}
+.productView .plant .button {
+  color: #ffffff;
+  border-color: #ffffff;
+}
+.productView .plant img {
+  margin-left: 30px;
+}
+
+.requirement .font {
+  font-size: 40px;
+  margin-right: 10px;
+  color: #e5e9ea;
+}
+.requirement .boxText .parameter {
+  font-size: 18px;
+  color: #e5e9ea;
+  text-transform: uppercase;
+}
+.requirement .boxText .property {
+  font-size: 22px;
+  color: #ffffff;
+}
+
+/*# sourceMappingURL=ProductView.module.css.map */

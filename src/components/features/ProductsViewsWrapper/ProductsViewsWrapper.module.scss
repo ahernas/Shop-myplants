@@ -1,0 +1,11 @@
+@import "../../../styles/settings.scss";
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.itemBox {
+  width: 1140px;
+}
