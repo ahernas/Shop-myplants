@@ -40,7 +40,7 @@
 
 .information {
   flex-direction: column;
-  color: $color-light-text;
+  color: $color-header-text;
 
   .name {
     font-size: 20px;
@@ -48,7 +48,7 @@
   }
 
   .price {
-    font-size: 15px;
+    font-size: 18px;
   }
 
 }

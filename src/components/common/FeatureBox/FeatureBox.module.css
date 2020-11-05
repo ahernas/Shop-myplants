@@ -11,7 +11,7 @@
 .root .iconWrapper {
   height: 60px;
   transform: translateY(-50%);
-  color: #1c2d33;
+  color: #75818b;
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -22,7 +22,7 @@
 }
 .root .iconWrapper::before {
   content: "";
-  border: 1px solid #485256;
+  border: 1px solid #75818b;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -46,7 +46,7 @@
 }
 .root .content {
   text-transform: uppercase;
-  color: #2a2a2a;
+  color: #485256;
   margin-top: -0.5rem;
   letter-spacing: 1px;
   font-weight: 300;

@@ -33,14 +33,14 @@
 
 .information {
   flex-direction: column;
-  color: #ffffff;
+  color: #1c2d33;
 }
 .information .name {
   font-size: 20px;
   font-weight: bold;
 }
 .information .price {
-  font-size: 15px;
+  font-size: 18px;
 }
 
 /*# sourceMappingURL=ProoductBox.module.css.map */
