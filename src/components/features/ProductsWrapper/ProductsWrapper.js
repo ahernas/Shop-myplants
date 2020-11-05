@@ -12,7 +12,7 @@ class ProductsWrapper extends React.Component {
     console.log({products});
     return (
       <div className={styles.root}>
-        <div className={'container p-0 mt-5'}>
+        <div className={'container p-0 mt-5 mb-5'}>
           <div className={styles.wrapper}>
             {products.map(item => (
               <div
