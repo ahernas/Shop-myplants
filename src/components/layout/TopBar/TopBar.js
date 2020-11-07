@@ -27,29 +27,29 @@ class TopBar extends React.Component {
               <div className={`col-4 text-right col-sm text-right  ${styles.topMenu}`}>
                 <ul>
                   <li>
-                    <NavLink href="/">Home</NavLink>
+                    <a href="/">Home</a>
                   </li>
                   <li>
-                    <NavLink href="/products">Products</NavLink>
+                    <a href="/products">Products</a>
                   </li>
                   <li>
-                    <NavLink href="/plantfinder">Plant finder</NavLink>
+                    <a href="/plantFinder">Plant finder</a>
                   </li>
                   <li>
-                    <NavLink href="/aboutus">About us</NavLink>
+                    <a href="/aboutUs">About us</a>
                   </li>
                   <li>
-                    <NavLink href="/contacts">Contact</NavLink>
+                    <a href="/contacts">Contact</a>
                   </li>
                   <li>
-                    <NavLink href="/user">
+                    <a href="/user">
                       <FontAwesomeIcon className={`icons ${styles.icon}`} icon={faUser}/>
-                    </NavLink>
+                    </a>
                   </li>
                   <li>
-                    <NavLink href="/cart">
+                    <a href="/cart">
                       <FontAwesomeIcon className={styles.icon} icon={faShoppingCart}/>
-                    </NavLink>
+                    </a>
                   </li>
                 </ul>
               </div>
