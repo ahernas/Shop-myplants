@@ -5,10 +5,16 @@ import { composeWithDevTools } from 'redux-devtools-extension';
 import initialState from './initialState';
 
 import viewPortReducer from './viewPortRedux';
+import productsRedux from './productsRedux';
+import companyRedux from './companyRedux';
+import productDetailsRedux from './productDetailsRedux';
 
 // define reducers
 const reducers = {
   viewport: viewPortReducer,
+  products: productsRedux,
+  company: companyRedux,
+  productDetails: productDetailsRedux,
 };
 
 // add blank reducers for initial state properties without reducers

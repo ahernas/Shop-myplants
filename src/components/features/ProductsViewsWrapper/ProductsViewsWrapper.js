@@ -24,7 +24,7 @@ class ProductsViewsWrapper extends React.Component {
 ProductsViewsWrapper.propTypes = {
   products: PropTypes.arrayOf(
     PropTypes.shape({
-      id: PropTypes.string,
+      id: PropTypes.number,
       name: PropTypes.string,
       price: PropTypes.number,
       photo: PropTypes.string,

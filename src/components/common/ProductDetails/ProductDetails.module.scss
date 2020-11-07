@@ -1,0 +1,113 @@
+@import "../../../styles/settings.scss";
+
+.productDetails {
+
+  h3 {
+    font-size: 20px;
+    text-transform: uppercase;
+    color: $color-button-text-light;
+    margin: 0;
+  }
+
+  p {
+    color: $color-button-text-dark;
+    margin-bottom: 0;
+    font-size: 22px;
+  }
+}
+
+.mainBox {
+  background-color: $color-light-blue;
+  border-radius: 30px;
+
+  .name {
+    font-size: 40px;
+    font-weight: bold;
+    color: $color-light-text;
+  }
+}
+
+.descriptionBox {
+  background-color: $color-button-2;
+  border-radius: 30px;
+  padding: 15px;
+}
+
+.font {
+  color: $color-button-text-light;
+  font-size: 22px;
+  margin-right: 15px;
+}
+
+.galleryBox {
+  flex-wrap: wrap;
+
+  img {
+    width: 225px;
+    height: 300px;
+    background-size: cover;
+
+  }
+}
+.requirement {
+  margin-left: -16px;
+  margin-right: -16px;
+}
+
+.requirementBox {
+  background-color: $color-button-2;
+  border-radius: 20px;
+  padding: 15px 30px;
+  margin: 0 2px 0 2px;
+}
+
+.orderDetails {
+  //background-color: $color-light-blue;
+  //padding: 25px 100px 25px 100px;
+  border-radius: 30px;
+
+  .fontOrderBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $color-button;
+    width: 40px;
+    height: 40px;
+    border-radius: 30px;
+    color: $color-button-text-dark;
+  }
+
+  .amountBox {
+    background-color: $color-light-blue;
+    padding: 40px;
+    border-radius: 20px;
+    margin: 25px 0 15px 0;
+    height: 50px;
+  }
+
+  .amount {
+    font-size: 50px;
+    margin: 0 10px;
+    color: $color-button-2;
+    font-weight: bolder;
+
+  }
+
+  .price {
+    background-color: $color-light-blue;
+    border-radius: 20px;
+    padding: 40px;
+    color: $color-button-2;
+    font-size: 50px;
+    font-weight: bolder;
+    height: 50px;
+    margin: 25px 0 15px 10px;
+    width: 100%;
+  }
+}
+
+.button {
+  font-size: 20px;
+  padding: 30px;
+  text-transform: uppercase;
+}

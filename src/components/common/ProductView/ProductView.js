@@ -5,6 +5,7 @@ import styles from './ProductView.module.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faTemperatureHigh, faTint, faSun} from '@fortawesome/free-solid-svg-icons';
 import Button from '../Button/Button';
+import {ProductPropType} from '../PropTypes/ProductPropType';
 
 class ProductView extends React.Component {
   render() {
@@ -60,14 +61,6 @@ class ProductView extends React.Component {
   }
 }
 
-ProductView.propTypes = {
-  id: PropTypes.string,
-  name: PropTypes.string,
-  photo: PropTypes.string,
-  price: PropTypes.number,
-  water: PropTypes.string,
-  light: PropTypes.string,
-  temperature: PropTypes.string,
-};
+ProductView.propTypes = ProductPropType;
 
 export default ProductView;

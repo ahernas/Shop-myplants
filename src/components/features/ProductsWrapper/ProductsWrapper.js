@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 import styles from './ProductsWrapper.module.scss';
 
-import ProductBox from '../../common/ProductBox/ProductBoxContainer';
+import ProductBox from '../../common/ProductBox/ProductBox';
 
 class ProductsWrapper extends React.Component {
 
@@ -31,7 +31,7 @@ class ProductsWrapper extends React.Component {
 ProductsWrapper.propTypes = {
   products: PropTypes.arrayOf(
     PropTypes.shape({
-      id: PropTypes.string,
+      id:  PropTypes.number,
       name: PropTypes.string,
       price: PropTypes.number,
       photo: PropTypes.string,
