@@ -21,7 +21,6 @@ class ProductDetails extends React.Component {
 
   render() {
     const { changeAddToCartCount, count, product: {name, photo, description, images, water, light, temperature, difficulty, size, price }} = this.props;
-
     return (
       <div className={'container mb-5 ' + styles.productDetails}>
         <div className={'row mb-2 ' + styles.mainBox}>

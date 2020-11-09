@@ -9,7 +9,7 @@ import {ProductPropType} from '../PropTypes/ProductPropType';
 
 class ProductView extends React.Component {
   render() {
-    const { name, photo, light, temperature, water } = this.props;
+    const { name, photo, light, temperature, water, id } = this.props;
 
     return(
       <div className={'container ' + styles.productViewContainer}>
@@ -50,7 +50,7 @@ class ProductView extends React.Component {
             <div className={'flex-column d-flex justify-content-end '}>
               <div className={styles.title}>{name}</div>
               <div>
-                <Button className={'mt-4 ' + styles.button} variant='outline'>See plant</Button>
+                <Button href={`/products/${id}`} className={'mt-4 ' + styles.button} variant='outline'>See plant</Button>
               </div>
             </div>
             <img src={photo} alt='view of plant'/>

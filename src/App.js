@@ -10,9 +10,10 @@ import {MainLayout} from './components/layout/MainLayout/MainLayout';
 import Homepage from './components/views/Home/Homepage';
 import ProductsPage from './components/views/Products/ProductsPage';
 import ProductPage from './components/views/Product/ProductPage';
+import CartPage from './components/views/Cart/CartPage';
+// import OrderPage from './components/pages/Order/OrderPage.js';
 // import NotFound from './components/pages/NotFound/NotFoundPage';
-// import Prices from './components/pages/Prices/PricesPage';
-// import Order from './components/pages/Order/OrderPage.js';
+
 
 class App extends React.Component {
 
@@ -25,6 +26,8 @@ class App extends React.Component {
               <Route path="/" exact component={Homepage} />
               <Route path="/products" exact component={ProductsPage} />
               <Route path="/products/:id" exact component={ProductPage} />
+              <Route path="/cart" exact component={CartPage} />
+              {/*<Route path="/order" exact component={OrderPage} />*/}
               {/*<Route component={NotFound} />*/}
             </Switch>
           </MainLayout>

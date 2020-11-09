@@ -182,6 +182,25 @@ const initialState = {
     7: { addToCartCount: 1 },
     8: { addToCartCount: 1 },
   },
+
+  cart: {
+    items: [
+      {
+        id: 2,
+        count: 1,
+      },
+      {
+        id: 8,
+        count: 3,
+      },
+      {
+        id: 4,
+        count: 1,
+      },
+    ],
+  },
+
+
 };
 
 export default initialState;

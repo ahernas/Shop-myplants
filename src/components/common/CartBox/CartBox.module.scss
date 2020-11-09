@@ -1,0 +1,48 @@
+@import "../../../styles/settings.scss";
+
+.product {
+  padding: 0 30px;
+  border: 2px solid $color-button;
+  border-radius: 20px;
+}
+
+.imgBox {
+  img {
+    height: 150px;
+    width: 150px;
+  }
+}
+
+.nameBox {
+  color: $color-button-text-dark;
+  font-size: 30px;
+  width: 300px;
+}
+
+.fontOrderBox,
+.fontCloseBox {
+  font-size: 18px;
+  color: $color-button-text-dark;
+  background-color: $color-button;
+  border-radius: 30px;
+  padding: 10px 15px;
+  margin: 0 10px;
+
+  &:hover {
+    background-color: $color-button-hover;
+    color: $color-button-text-light;
+  }
+}
+
+.amount {
+  font-size: 25px;
+  color: $color-button-text-dark;
+}
+
+.price {
+  font-size: 30px;
+  font-weight: bold;
+  color: $color-button-text-dark;
+}
+
+

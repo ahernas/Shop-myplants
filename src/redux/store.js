@@ -8,6 +8,7 @@ import viewPortReducer from './viewPortRedux';
 import productsRedux from './productsRedux';
 import companyRedux from './companyRedux';
 import productDetailsRedux from './productDetailsRedux';
+import cartRedux from './cartRedux';
 
 // define reducers
 const reducers = {
@@ -15,6 +16,7 @@ const reducers = {
   products: productsRedux,
   company: companyRedux,
   productDetails: productDetailsRedux,
+  cart: cartRedux,
 };
 
 // add blank reducers for initial state properties without reducers

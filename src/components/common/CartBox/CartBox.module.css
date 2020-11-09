@@ -1,0 +1,44 @@
+.product {
+  padding: 0 30px;
+  border: 2px solid #e5e9ea;
+  border-radius: 20px;
+}
+
+.imgBox img {
+  height: 150px;
+  width: 150px;
+}
+
+.nameBox {
+  color: #656e71;
+  font-size: 30px;
+  width: 300px;
+}
+
+.fontOrderBox,
+.fontCloseBox {
+  font-size: 18px;
+  color: #656e71;
+  background-color: #e5e9ea;
+  border-radius: 30px;
+  padding: 10px 15px;
+  margin: 0 10px;
+}
+.fontOrderBox:hover,
+.fontCloseBox:hover {
+  background-color: #485256;
+  color: #bac3ca;
+}
+
+.amount {
+  font-size: 25px;
+  color: #656e71;
+}
+
+.price {
+  font-size: 30px;
+  font-weight: bold;
+  color: #656e71;
+}
+
+/*# sourceMappingURL=CartBox.module.css.map */
