@@ -22,7 +22,7 @@ class  CartBox extends React.Component {
           {name}
         </div>
         <div className={'d-flex align-items-center'}>
-          <div className={'d-flex align-items-center justify-content-start ' + styles.amountBox}>
+          <div className={'d-flex justify-content-start ' + styles.amountBox}>
             <a className={styles.fontOrderBox} onClick={() => changeCount(count - 1)}>
               <FontAwesomeIcon icon={faMinus}/>
             </a>

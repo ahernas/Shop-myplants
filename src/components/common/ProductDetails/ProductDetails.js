@@ -20,7 +20,7 @@ import Button from '../Button/Button';
 class ProductDetails extends React.Component {
 
   render() {
-    const { changeAddToCartCount, count, product: {name, photo, description, images, water, light, temperature, difficulty, size, price }} = this.props;
+    const { changeAddToCartCount, addToCart, count, product: {id, name, photo, description, images, water, light, temperature, difficulty, size, price }} = this.props;
     return (
       <div className={'container mb-5 ' + styles.productDetails}>
         <div className={'row mb-2 ' + styles.mainBox}>
@@ -106,7 +106,7 @@ class ProductDetails extends React.Component {
               { count * price }$
             </div>
           </div>
-          <div className='d-flex justify-content-end align-items-center '>
+          <div className='d-flex justify-content-end align-items-center ' onClick={() => addToCart(id, count)}>
             <Button className={styles.button} variant='main'>Add to cart</Button>
           </div>
         </div>
@@ -120,6 +120,7 @@ ProductDetails.propTypes = {
   product: ProductPropType,
   images: PropTypes.array,
   changeAddToCartCount: PropTypes.func,
+  addToCart: PropTypes.func,
 };
 
 export default withRouter((props) => <ProductDetails {...props}/>);

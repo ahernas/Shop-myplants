@@ -7,6 +7,7 @@ import { getById } from '../../../redux/productsRedux.js';
 import { getById as getByIdProductDetails } from '../../../redux/productDetailsRedux.js';
 import {withRouter} from 'react-router-dom';
 import {changeAddToCartCount} from '../../../redux/productDetailsRedux';
+import {addToCart} from '../../../redux/cartRedux';
 
 const mapStateToProps = (state, {match: {params: {id }}}) => ({
   productId: id,
@@ -16,6 +17,7 @@ const mapStateToProps = (state, {match: {params: {id }}}) => ({
 
 const mapDispatchToProps = (dispatch, {match: {params: {id }}}) => ({
   changeAddToCartCount: (count) => dispatch(changeAddToCartCount({ productId: parseInt(id, 10), count })),
+  addToCart: (id, count) => dispatch(addToCart({ id, count })),
 });
 
 const ConnectedComponent = connect(mapStateToProps, mapDispatchToProps)(ProductDetails);
