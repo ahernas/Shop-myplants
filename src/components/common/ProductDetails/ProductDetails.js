@@ -114,6 +114,7 @@ class ProductDetails extends React.Component {
     );
   }
 }
+
 ProductDetails.propTypes = {
   count: PropTypes.number,
   productId: PropTypes.string,

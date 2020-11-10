@@ -10,7 +10,7 @@ import {ProductPropType} from '../PropTypes/ProductPropType';
 class  CartBox extends React.Component {
 
   render() {
-    const {changeCount, count, product: {name, photo, price}} = this.props;
+    const {changeCount, removeProductFromCart, count, product: {id, name, photo, price}} = this.props;
 
     return (
 
@@ -34,7 +34,7 @@ class  CartBox extends React.Component {
             </a>
           </div>
         </div>
-        <div className={styles.fontCloseBox}>
+        <div className={styles.fontCloseBox} onClick={ () => removeProductFromCart(id)}>
           <FontAwesomeIcon icon={faTrashAlt}/>
         </div>
         <div className={styles.price}>
@@ -51,6 +51,7 @@ CartBox.propTypes = {
   product: ProductPropType,
   changeCount: PropTypes.func,
   cart: PropTypes.object,
+  removeProductFromCart: PropTypes.func,
 };
 
 export default CartBox;

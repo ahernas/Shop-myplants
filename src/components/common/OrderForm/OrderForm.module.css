@@ -1,0 +1,43 @@
+.orderBox {
+  width: 600px;
+  padding: 20px;
+  border: 4px solid #e5e9ea;
+  border-radius: 20px;
+  background-color: #e5e9ea;
+}
+
+.productBox {
+  font-size: 30px;
+  color: #75818b;
+}
+
+.deliveryBox {
+  font-size: 30px;
+  margin-bottom: 20px;
+  color: #75818b;
+}
+
+.label {
+  text-transform: uppercase;
+  width: 80px;
+  color: #75818b;
+  font-size: 15px;
+}
+
+.input {
+  width: 450px;
+  padding: 20px;
+}
+
+.summaryPrice {
+  padding-right: 20px;
+  font-size: 40px;
+}
+
+.buttonOrder {
+  font-size: 25px;
+  padding: 15px 20px;
+  text-transform: uppercase;
+}
+
+/*# sourceMappingURL=OrderForm.module.css.map */
