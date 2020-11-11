@@ -7,8 +7,8 @@ import {faHeart, faPlus} from '@fortawesome/free-solid-svg-icons';
 
 class ProductBox extends React.Component {
   render() {
-    const { name, photo, price, id } = this.props;
-    console.log({id});
+    const { name, photo, price, _id } = this.props;
+
     return(
       <div className={styles.root}>
         <div className={styles.box}>
@@ -25,7 +25,7 @@ class ProductBox extends React.Component {
             <div className={styles.price}>from {price}$</div>
           </div>
           <div className={'d-flex justify-content-end pb-4 pr-4'}>
-            <a href={`/products/${id}`}>
+            <a href={`/products/${_id}`}>
               <div className={'d-flex justify-content-center align-items-center ' + styles.backgroundPlus}>
                 <FontAwesomeIcon className={styles.fontPlus} icon={ faPlus }/>
               </div>
@@ -38,7 +38,7 @@ class ProductBox extends React.Component {
 }
 
 ProductBox.propTypes = {
-  id: PropTypes.string,
+  _id: PropTypes.string,
   name: PropTypes.string,
   photo: PropTypes.string,
   price: PropTypes.number,

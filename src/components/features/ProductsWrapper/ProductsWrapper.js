@@ -7,9 +7,18 @@ import ProductBox from '../../common/ProductBox/ProductBox';
 
 class ProductsWrapper extends React.Component {
 
+  componentDidMount() {
+    this.props.loadProducts();
+  }
   render() {
-    const { products } = this.props;
-    console.log({products});
+    const { products, request } = this.props;
+    if(request.pending) {
+      return <div className={'container p-0 mt-5 mb-5'}>LOADING</div>;
+    }
+    if(request.error) {
+      return <div>Try again</div>;
+    }
+
     return (
       <div className={styles.root}>
         <div className={'container p-0 mt-5 mb-5'}>
@@ -29,6 +38,12 @@ class ProductsWrapper extends React.Component {
 }
 
 ProductsWrapper.propTypes = {
+  loadProducts: PropTypes.func,
+  request: PropTypes.shape({
+    pending: PropTypes.bool,
+    success: PropTypes.bool,
+    error: PropTypes.any,
+  }),
   products: PropTypes.arrayOf(
     PropTypes.shape({
       id:  PropTypes.number,

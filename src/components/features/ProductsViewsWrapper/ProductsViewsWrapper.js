@@ -6,9 +6,18 @@ import styles from './ProductsViewsWrapper.module.scss';
 import ProductView from '../../common/ProductView/ProductView';
 
 class ProductsViewsWrapper extends React.Component {
+  componentDidMount() {
+    this.props.loadProducts();
+  }
 
   render() {
-    const { products } = this.props;
+    const { products, request } = this.props;
+    if(request.pending) {
+      return <div className={'container p-0 mt-5 mb-5'}>LOADING</div>;
+    }
+    if(request.error) {
+      return <div>Try again</div>;
+    }
     return (
       <div className={'container p-0 mt-5 mb-5'}>
         <div className={styles.wrapper}>
@@ -22,6 +31,12 @@ class ProductsViewsWrapper extends React.Component {
 }
 
 ProductsViewsWrapper.propTypes = {
+  loadProducts: PropTypes.func,
+  request: PropTypes.shape({
+    pending: PropTypes.bool,
+    success: PropTypes.bool,
+    error: PropTypes.any,
+  }),
   products: PropTypes.arrayOf(
     PropTypes.shape({
       id: PropTypes.number,

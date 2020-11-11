@@ -18,9 +18,18 @@ import styles from './ProductDetails.module.scss';
 import Button from '../Button/Button';
 
 class ProductDetails extends React.Component {
-
+  componentDidMount() {
+    this.props.loadProduct();
+  }
   render() {
-    const { changeAddToCartCount, addToCart, count, product: {id, name, photo, description, images, water, light, temperature, difficulty, size, price }} = this.props;
+    const { request, changeAddToCartCount, addToCart, count, product} = this.props;
+    if(request.error) {
+      return <div>Try again</div>;
+    }
+    if(request.pending || !product) {
+      return <div className={'container p-0 mt-5 mb-5'}>LOADING</div>;
+    }
+    const {id, name, photo, description, images, water, light, temperature, difficulty, size, price } = product;
     return (
       <div className={'container mb-5 ' + styles.productDetails}>
         <div className={'row mb-2 ' + styles.mainBox}>
@@ -116,6 +125,12 @@ class ProductDetails extends React.Component {
 }
 
 ProductDetails.propTypes = {
+  request: PropTypes.shape({
+    pending: PropTypes.bool,
+    success: PropTypes.bool,
+    error: PropTypes.any,
+  }),
+  loadProduct: PropTypes.func,
   count: PropTypes.number,
   productId: PropTypes.string,
   product: ProductPropType,
