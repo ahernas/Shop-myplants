@@ -38,7 +38,7 @@ class ProductBox extends React.Component {
 }
 
 ProductBox.propTypes = {
-  _id: PropTypes.string,
+  _id: PropTypes.number,
   name: PropTypes.string,
   photo: PropTypes.string,
   price: PropTypes.number,
