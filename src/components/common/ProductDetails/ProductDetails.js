@@ -30,6 +30,7 @@ class ProductDetails extends React.Component {
     if(request.pending || !product) {
       return <div className={'container p-0 mt-5 mb-5'}>LOADING</div>;
     }
+    console.log(this.props);
     const { name, photo, description, images, water, light, temperature, difficulty, size, price } = product;
     return (
       <div className={'container mb-5 ' + styles.productDetails}>
@@ -119,7 +120,10 @@ class ProductDetails extends React.Component {
           <a className='d-flex justify-content-end align-items-center '>
             <Button className={styles.button} onClick={(e) => {
               e.preventDefault();
-              addToCart(count);
+              addToCart(count).then(() => {
+                this.props.history.push('/cart');
+              });
+
             }} variant='main'>Add to cart</Button>
           </a>
         </div>
@@ -133,6 +137,9 @@ ProductDetails.propTypes = {
     pending: PropTypes.bool,
     success: PropTypes.bool,
     error: PropTypes.any,
+  }),
+  history: PropTypes.shape({
+    push: PropTypes.func,
   }),
   loadProduct: PropTypes.func,
   addToCart: PropTypes.func,

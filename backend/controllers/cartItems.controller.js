@@ -29,9 +29,16 @@ exports.getById = async (req, res) => {
 exports.postNew = async (req, res) => {
   try {
     const { count, productId } = req.body;
-    const newCartItem = new CartItem({ count: count, productId: productId });
-    await newCartItem.save();
-    res.json(newCartItem);
+    const cart = await(CartItem.findOne({ productId: productId }));
+    if(cart){
+      cart.count += 1;
+      await cart.save();
+      res.json(cart);
+    } else {
+      const newCartItem = new CartItem({count: count, productId: productId});
+      await newCartItem.save();
+      res.json(newCartItem);
+    }
 
   } catch(err) {
     res.status(500).json({ message: err.message });
