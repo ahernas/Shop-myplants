@@ -31,7 +31,9 @@
 }
 .productView .plant .button {
   color: #ffffff;
+  font-size: 15px;
   border-color: #ffffff;
+  padding: 20px 40px;
 }
 .productView .plant img {
   margin-left: 30px;

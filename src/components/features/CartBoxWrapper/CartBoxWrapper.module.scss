@@ -1,0 +1,9 @@
+@import "../../../styles/settings.scss";
+
+.buttonArrowRight {
+  font-size: 15px;
+  text-transform: uppercase;
+  padding: 20px 40px;
+  border-color: $color-button-text-dark;
+  color: $color-button-text-dark,
+}

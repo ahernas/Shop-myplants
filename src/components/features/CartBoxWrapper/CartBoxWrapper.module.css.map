@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":[],"names":[],"mappings":"","file":"CartBoxWrapper.module.css"}
+{"version":3,"sourceRoot":"","sources":["CartBoxWrapper.module.scss","../../../styles/settings.scss"],"names":[],"mappings":"AAEA;EACE;EACA;EACA;EACA,cCYuB;EDXvB","file":"CartBoxWrapper.module.css"}

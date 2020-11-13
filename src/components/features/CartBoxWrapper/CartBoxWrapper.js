@@ -1,9 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import styles from './CartBoxWrapper.module.scss';
-
 import CartBox from '../../common/CartBox/CartBoxContainer';
+import Button from '../../common/Button/Button';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
+import styles from './CartBoxWrapper.module.scss';
+import {faArrowRight} from '@fortawesome/free-solid-svg-icons';
 
 class CartBoxWrapper extends React.Component {
   componentDidMount() {
@@ -25,7 +28,18 @@ class CartBoxWrapper extends React.Component {
           {cart.items?.map(item => (<CartBox key={item.id} {...item}/>
           ))}
         </div>
+        <a className={'d-flex justify-content-end mt-4'}>
+          <Button
+            className={styles.buttonArrowRight}
+            variant="outline"
+            href="/products"
+          >
+            Continue shopping
+            <FontAwesomeIcon className={'ml-2 ' + styles.arrowRight} icon={faArrowRight}/>
+          </Button>
+        </a>
       </div>
+
     );
   }
 }
@@ -43,6 +57,9 @@ CartBoxWrapper.propTypes = {
         productId: PropTypes.number,
         count: PropTypes.number,
       })),
+  }),
+  history: PropTypes.shape({
+    push: PropTypes.func,
   }),
 };
 

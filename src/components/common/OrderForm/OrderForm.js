@@ -48,6 +48,12 @@ class  OrderForm extends React.Component {
               <Input className={styles.input} type="text" name="address" id="clientAddress" placeholder="12 Baker Street New York, NY 12345 " />
             </FormGroup>
           </div>
+          <div className={'row pl-3 mb-3 '}>
+            <FormGroup className={'d-flex flex-row align-items-center'}>
+              <Label className={'m-0 pr-2 ' + styles.label} for="clientMessage">Message:</Label>
+              <Input className={styles.input} type="textarea" name="message" id="clientMessage" placeholder="Add a custom message (optional)... " />
+            </FormGroup>
+          </div>
           <div className={'row pl-3 d-flex justify-content-end align-items-center pr-3'}>
             <div className={styles.summaryPrice}>
               {cart.totalPrice !== 0 ? cart.totalPrice + cart.deliveryPrice : cart.deliveryPrice - 10}$

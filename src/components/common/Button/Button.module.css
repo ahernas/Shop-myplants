@@ -5,7 +5,7 @@
 
 .main, .small {
   background-color: #e5e9ea;
-  border-radius: 5px;
+  border-radius: 10px;
   color: #75818b;
   font-size: 16px;
   line-height: 24px;
@@ -26,7 +26,7 @@
 }
 
 .outline {
-  border-radius: 5px;
+  border-radius: 10px;
   display: inline-block;
   padding: 5px 10px;
   border: 1px solid #485256;

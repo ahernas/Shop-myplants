@@ -1,3 +1,9 @@
-
+.buttonArrowRight {
+  font-size: 15px;
+  text-transform: uppercase;
+  padding: 20px 40px;
+  border-color: #656e71;
+  color: #656e71;
+}
 
 /*# sourceMappingURL=CartBoxWrapper.module.css.map */

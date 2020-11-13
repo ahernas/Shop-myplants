@@ -11,7 +11,7 @@ import {
   faSeedling,
   faArrowsAltV,
   faPlus,
-  faMinus,
+  faMinus, faArrowLeft,
 } from '@fortawesome/free-solid-svg-icons';
 
 import styles from './ProductDetails.module.scss';
@@ -117,15 +117,23 @@ class ProductDetails extends React.Component {
               { count * price }$
             </div>
           </div>
-          <a className='d-flex justify-content-end align-items-center '>
-            <Button className={styles.button} onClick={(e) => {
-              e.preventDefault();
-              addToCart(count).then(() => {
-                this.props.history.push('/cart');
-              });
-
-            }} variant='main'>Add to cart</Button>
-          </a>
+          <div className={'d-flex flex-row justify-content-between'}>
+            <div className={'d-flex align-items-center justify-content-center'}>
+              <Button className={styles.button} variant='main' href="/products">
+                <FontAwesomeIcon className='mr-2' icon={faArrowLeft}/>
+                Back
+              </Button>
+            </div>
+            <a className='d-flex align-items-center justify-content-center'>
+              <Button className={styles.button} onClick={(e) => {
+                e.preventDefault();
+                addToCart(count).then(() => {
+                  this.props.history.push('/cart');});
+              }}
+              variant='main'>Add to cart
+              </Button>
+            </a>
+          </div>
         </div>
       </div>
     );
