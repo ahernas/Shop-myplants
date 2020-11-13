@@ -16,25 +16,6 @@ const initialState = {
       image: 'https://i.postimg.cc/7LFNzDp2/pppng.png',
     },
   },
-
-  cart: {
-    items: [
-      {
-        id: 2,
-        count: 1,
-      },
-      {
-        id: 8,
-        count: 3,
-      },
-      {
-        id: 4,
-        count: 1,
-      },
-    ],
-  },
-
-
 };
 
 export default initialState;

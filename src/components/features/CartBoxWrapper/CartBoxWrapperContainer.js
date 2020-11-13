@@ -2,11 +2,15 @@ import { connect } from 'react-redux';
 
 import CartBoxWrapper from './CartBoxWrapper';
 
-import {getCart} from '../../../redux/cartRedux';
+import {getCart, getRequests, loadCartRequest} from '../../../redux/cartRedux';
 
 const mapStateToProps = state => ({
   cart: getCart(state),
-
+  requests: getRequests(state),
 });
 
-export default connect(mapStateToProps)(CartBoxWrapper);
+const mapDispatchToProps = dispatch => ({
+  loadCartItems: () => dispatch(loadCartRequest()),
+});
+
+export default connect(mapStateToProps, mapDispatchToProps)(CartBoxWrapper);

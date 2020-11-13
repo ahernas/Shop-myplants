@@ -3,16 +3,15 @@ import { connect } from 'react-redux';
 
 import CartBox from './CartBox';
 
-import { getById } from '../../../redux/productsRedux.js';
-import {changeCount, removeProductFromCart} from '../../../redux/cartRedux';
+import {changeCountRequest, deleteItemRequest, getRequests} from '../../../redux/cartRedux';
 
 const mapStateToProps = (state, {id}) => ({
-  product: getById(state, id),
+  requestChangeCount: getRequests(state)['CHANGE_COUNT'] || {},
 });
 
-const mapDispatchToProps = (dispatch, {id}) => ({
-  changeCount: (count) => dispatch(changeCount({ id: parseInt(id, 10), count })),
-  removeProductFromCart: (id) => dispatch(removeProductFromCart({ id })),
+const mapDispatchToProps = (dispatch, {product: {_id}}) => ({
+  changeCount: (count) => dispatch(changeCountRequest(_id, count)),
+  deleteItem: () => dispatch(deleteItemRequest(_id)),
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(CartBox);

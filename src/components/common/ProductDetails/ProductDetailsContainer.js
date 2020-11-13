@@ -5,8 +5,8 @@ import ProductDetails from './ProductDetails';
 
 import { getById } from '../../../redux/productDetailsRedux.js';
 import {withRouter} from 'react-router-dom';
-import {changeAddToCartCount, getRequest, loadProductRequest} from '../../../redux/productDetailsRedux';
-import {addToCart} from '../../../redux/cartRedux';
+import { getRequest, loadProductRequest, changeAddToCartCount } from '../../../redux/productDetailsRedux';
+import { addToCartRequest } from '../../../redux/cartRedux';
 
 const mapStateToProps = (state, {match: {params: {id }}}) => ({
   productId: id,
@@ -16,10 +16,10 @@ const mapStateToProps = (state, {match: {params: {id }}}) => ({
 });
 
 const mapDispatchToProps = (dispatch, {match: {params: {id }}}) => ({
-  changeAddToCartCount: (count) => dispatch(changeAddToCartCount({ productId: parseInt(id, 10), count })),
-  addToCart: (id, count) => dispatch(addToCart({ id, count })),
+
   loadProduct: () => dispatch(loadProductRequest(id)),
-});
+  addToCart: (count) => dispatch(addToCartRequest(count, id)),
+  changeAddToCartCount: (count) => dispatch(changeAddToCartCount({ productId: parseInt(id, 10), count }))});
 
 const ConnectedComponent = connect(mapStateToProps, mapDispatchToProps)(ProductDetails);
 

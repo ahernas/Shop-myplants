@@ -75,6 +75,11 @@
     height: 40px;
     border-radius: 30px;
     color: $color-button-text-dark;
+
+    &:hover {
+      background-color: $color-button-hover;
+      color: $color-button-text-light;
+    }
   }
 
   .amountBox {

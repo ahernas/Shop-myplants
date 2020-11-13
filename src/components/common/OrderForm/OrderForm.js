@@ -9,19 +9,17 @@ import {ProductPropType} from '../PropTypes/ProductPropType';
 class  OrderForm extends React.Component {
 
   render() {
-    const { cart: {items}, itemsWithProducts } = this.props;
-    const totalPrice = itemsWithProducts.map(item => item.count * item.product.price).reduce((prev, next) => prev + next, 0);
-    const deliveryPrice = 10;
+    const { cart } = this.props;
 
     return (
       <div className={'container d-flex justify-content-end mb-5'}>
         <div className={styles.orderBox}>
           <div className={'row ' + styles.productBox}>
             <div className={'col '}>
-              {items.length} x Product(s)
+              {cart?.items?.length} x Product(s)
             </div>
             <div className={'col d-flex justify-content-end'}>
-              {totalPrice}$
+              {cart.totalPrice}$
             </div>
           </div>
           <div className={'row ' + styles.deliveryBox}>
@@ -29,7 +27,7 @@ class  OrderForm extends React.Component {
             Delivery cost
             </div>
             <div className={'col d-flex justify-content-end'}>
-              {deliveryPrice}$
+              {cart.deliveryPrice}$
             </div>
           </div>
           <div className={'row pl-3 '}>
@@ -52,7 +50,7 @@ class  OrderForm extends React.Component {
           </div>
           <div className={'row pl-3 d-flex justify-content-end align-items-center pr-3'}>
             <div className={styles.summaryPrice}>
-              {totalPrice !== 0 ? totalPrice + deliveryPrice : deliveryPrice - 10}$
+              {cart.totalPrice !== 0 ? cart.totalPrice + cart.deliveryPrice : cart.deliveryPrice - 10}$
             </div>
             <div>
               <Button className={styles.buttonOrder} variant='outline'>Order</Button>
@@ -66,6 +64,8 @@ class  OrderForm extends React.Component {
 
 OrderForm.propTypes = {
   cart: PropTypes.shape( {
+    deliveryPrice: PropTypes.number,
+    totalPrice: PropTypes.number,
     items: PropTypes.arrayOf(
       PropTypes.shape({
         id: PropTypes.number,

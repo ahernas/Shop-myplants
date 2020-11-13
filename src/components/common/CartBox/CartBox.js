@@ -10,7 +10,7 @@ import {ProductPropType} from '../PropTypes/ProductPropType';
 class  CartBox extends React.Component {
 
   render() {
-    const {changeCount, removeProductFromCart, count, product: {_id, name, photo, price}} = this.props;
+    const {deleteItem, changeCount, count, product: {_id, name, photo, price}, requestChangeCount} = this.props;
 
     return (
 
@@ -23,20 +23,20 @@ class  CartBox extends React.Component {
         </div>
         <div className={'d-flex align-items-center'}>
           <div className={'d-flex justify-content-start ' + styles.amountBox}>
-            <a className={styles.fontOrderBox} onClick={() => changeCount(count - 1)}>
+            <a className={styles.fontOrderBox} onClick={() => !requestChangeCount.pending ? changeCount(count - 1) : null}>
               <FontAwesomeIcon icon={faMinus}/>
             </a>
             <div className={'d-flex align-items-center ' + styles.amount}>
               {count}
             </div>
-            <a className={styles.fontOrderBox} onClick={() => changeCount(count + 1)}>
+            <a className={styles.fontOrderBox} onClick={() => !requestChangeCount.pending ? changeCount(count + 1) : null}>
               <FontAwesomeIcon icon={faPlus}/>
             </a>
           </div>
         </div>
-        <div className={styles.fontCloseBox} onClick={ () => removeProductFromCart(_id)}>
+        <a className={styles.fontCloseBox} onClick={ () => deleteItem(_id)}>
           <FontAwesomeIcon icon={faTrashAlt}/>
-        </div>
+        </a>
         <div className={styles.price}>
           {price * count}$
         </div>
@@ -50,8 +50,13 @@ CartBox.propTypes = {
   productId: PropTypes.string,
   product: ProductPropType,
   changeCount: PropTypes.func,
+  deleteItem: PropTypes.func,
   cart: PropTypes.object,
-  removeProductFromCart: PropTypes.func,
+  requestChangeCount: PropTypes.shape({
+    pending: PropTypes.bool,
+    success: PropTypes.bool,
+    error: PropTypes.any,
+  }),
 };
 
 export default CartBox;

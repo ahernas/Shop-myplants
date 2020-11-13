@@ -66,6 +66,10 @@
   border-radius: 30px;
   color: #656e71;
 }
+.orderDetails .fontOrderBox:hover {
+  background-color: #485256;
+  color: #bac3ca;
+}
 .orderDetails .amountBox {
   background-color: #abc7dc;
   padding: 40px;

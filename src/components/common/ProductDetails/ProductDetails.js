@@ -16,6 +16,7 @@ import {
 
 import styles from './ProductDetails.module.scss';
 import Button from '../Button/Button';
+import {Link} from 'react-router-dom';
 
 class ProductDetails extends React.Component {
   componentDidMount() {
@@ -29,7 +30,7 @@ class ProductDetails extends React.Component {
     if(request.pending || !product) {
       return <div className={'container p-0 mt-5 mb-5'}>LOADING</div>;
     }
-    const {id, name, photo, description, images, water, light, temperature, difficulty, size, price } = product;
+    const { name, photo, description, images, water, light, temperature, difficulty, size, price } = product;
     return (
       <div className={'container mb-5 ' + styles.productDetails}>
         <div className={'row mb-2 ' + styles.mainBox}>
@@ -101,23 +102,26 @@ class ProductDetails extends React.Component {
         <div className={'row mt-4 flex-column ' + styles.orderDetails}>
           <div className={'d-flex flex-row align-items-center'}>
             <div className={'d-flex align-items-center justify-content-start ' + styles.amountBox}>
-              <div className={styles.fontOrderBox} onClick={() => changeAddToCartCount(count - 1)}>
+              <a className={styles.fontOrderBox} onClick={() => changeAddToCartCount(count - 1)}>
                 <FontAwesomeIcon icon={faMinus}/>
-              </div>
+              </a>
               <div className={'d-flex align-items-center ' + styles.amount}>
                 {count}
               </div>
-              <div className={styles.fontOrderBox} onClick={() => changeAddToCartCount(count + 1)}>
+              <a className={styles.fontOrderBox} onClick={() => changeAddToCartCount(count + 1)}>
                 <FontAwesomeIcon icon={faPlus}/>
-              </div>
+              </a>
             </div>
             <div className={'d-flex align-items-center justify-content-end ' + styles.price}>
               { count * price }$
             </div>
           </div>
-          <div className='d-flex justify-content-end align-items-center ' onClick={() => addToCart(id, count)}>
-            <Button className={styles.button} variant='main'>Add to cart</Button>
-          </div>
+          <a className='d-flex justify-content-end align-items-center '>
+            <Button className={styles.button} onClick={(e) => {
+              e.preventDefault();
+              addToCart(count);
+            }} variant='main'>Add to cart</Button>
+          </a>
         </div>
       </div>
     );
@@ -131,12 +135,12 @@ ProductDetails.propTypes = {
     error: PropTypes.any,
   }),
   loadProduct: PropTypes.func,
+  addToCart: PropTypes.func,
   count: PropTypes.number,
   productId: PropTypes.string,
   product: ProductPropType,
   images: PropTypes.array,
   changeAddToCartCount: PropTypes.func,
-  addToCart: PropTypes.func,
 };
 
 export default withRouter((props) => <ProductDetails {...props}/>);

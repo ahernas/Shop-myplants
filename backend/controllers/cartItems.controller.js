@@ -1,8 +1,14 @@
 const CartItem = require('../models/cartItem.model');
 
 exports.getAll = async (req, res) => {
+  const items = await CartItem.find().populate('productId');
   try {
-    await res.json(await CartItem.find());
+    await res.json({
+      items: items.map(i => ({count: i.count, product: i.productId})),
+      totalPrice: 0,
+      deliveryPrice: 10,
+      // summaryPrice: totalPrice + deliveryPrice,
+    });
   }
   catch(err) {
     res.status(500).json({ message: err });
@@ -25,33 +31,34 @@ exports.postNew = async (req, res) => {
     const { count, productId } = req.body;
     const newCartItem = new CartItem({ count: count, productId: productId });
     await newCartItem.save();
-    res.json({ message: 'OK' });
+    res.json(newCartItem);
 
   } catch(err) {
-    res.status(500).json({ message: err });
+    res.status(500).json({ message: err.message });
   }
 };
 
 exports.putById = async (req, res) => {
   const { count } = req.body;
   try {
-    const cart = await(CartItem.findById(req.params.id));
+    const cart = await(CartItem.findOne({ productId: req.params.id }));
     if(cart) {
-      await CartItem.updateOne({ _id: req.params.id }, { $set: { count: count }});
-      res.json({ message: 'OK' });
+      cart.count = count;
+      cart.save();
+      res.json(cart);
     }
     else res.status(404).json({ message: 'Not found...' });
   }
   catch(err) {
-    res.status(500).json({ message: err });
+    res.status(500).json({ message: err.message });
   }
 };
 
 exports.deleteById = async (req, res) => {
   try {
-    const cart = await(CartItem.findById(req.params.id));
+    const cart = await(CartItem.findOne({ productId: req.params.id }));
     if(cart) {
-      await CartItem.deleteOne({ _id: req.params.id });
+      await CartItem.deleteOne({ productId: req.params.id });
       res.json({ message: 'OK' });
     }
     else res.status(404).json({ message: 'Not found...' });
