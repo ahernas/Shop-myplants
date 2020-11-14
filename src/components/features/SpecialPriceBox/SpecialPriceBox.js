@@ -26,7 +26,7 @@ class SpecialPriceBox extends React.Component {
             </div>
           </div>
           <div className={styles.boxImage}>
-            <img src={'https://i.postimg.cc/HxbnYVRV/photo.png'}/>
+            <img src={'https://i.postimg.cc/HxbnYVRV/photo.png'} alt='image of plant'/>
           </div>
         </div>
       </div>

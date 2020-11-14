@@ -26,13 +26,13 @@ class NewsBox extends React.Component {
             </div>
           </div>
           <div className={'col-5 justify-content-center align-items-center d-flex ' + styles.imageBox1}>
-            <img src={news.information1.image}/>
+            <img src={news.information1.image} alt='image of plant'/>
           </div>
         </div>
 
         <div className={'py-5 mb-5 row justify-content-around'}>
           <div className={'col-5 justify-content-center align-items-center d-flex ' + styles.imageBox2}>
-            <img src={news.information2.image}/>
+            <img src={news.information2.image} alt='image of plant'/>
           </div>
           <div className='col-5 align-items-center d-flex'>
             <div className='col'>

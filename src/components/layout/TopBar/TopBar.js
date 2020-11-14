@@ -18,7 +18,7 @@ class TopBar extends React.Component {
             <div className='row text-left align-items-center'>
               <div className={styles.companyName}>{company.name}</div>
               <div className={styles.companyLogo}>
-                <img src={company.logo}/>
+                <img src={company.logo} alt='image of logo'/>
               </div>
             </div>
             <div className='row text-right'>

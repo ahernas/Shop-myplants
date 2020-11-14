@@ -16,7 +16,7 @@ class  CartBox extends React.Component {
 
       <div className={'container d-flex flex-row align-items-center justify-content-between ' + styles.product}>
         <div className={styles.imgBox}>
-          <img src={photo}/>
+          <img src={photo} alt='image of plant'/>
         </div>
         <div className={styles.nameBox}>
           {name}

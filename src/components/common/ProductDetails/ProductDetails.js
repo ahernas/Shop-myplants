@@ -40,7 +40,7 @@ class ProductDetails extends React.Component {
           </div>
         </div>
         <div className={'row d-flex ' + styles.galleryBox}>
-          {images.map(image => (<img className={styles.image} key={image} src={image}/>
+          {images.map(image => (<img className={styles.image} key={image} src={image} alt='image of plant'/>
           ))}
         </div>
         <div className={'row mt-4 ' + styles.descriptionBox}>
