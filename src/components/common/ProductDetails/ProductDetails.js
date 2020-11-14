@@ -16,7 +16,6 @@ import {
 
 import styles from './ProductDetails.module.scss';
 import Button from '../Button/Button';
-import {Link} from 'react-router-dom';
 
 class ProductDetails extends React.Component {
   componentDidMount() {
@@ -30,7 +29,6 @@ class ProductDetails extends React.Component {
     if(request.pending || !product) {
       return <div className={'container p-0 mt-5 mb-5'}>LOADING</div>;
     }
-    console.log(this.props);
     const { name, photo, description, images, water, light, temperature, difficulty, size, price } = product;
     return (
       <div className={'container mb-5 ' + styles.productDetails}>

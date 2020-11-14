@@ -20,10 +20,6 @@ const CHANGE_COUNT = createActionName('CHANGE_COUNT');
 const ADD_TO_CART = createActionName('ADD_ITEM');
 const DELETE_ITEM = createActionName('DELETE_ITEM');
 
-// const changeCountActionName = createActionName('changeCount');
-// const addToCartActionName = createActionName('addToCart');
-// const removeProductFromCartActionName = createActionName('removeProduct');
-
 export const startRequest = payload => ({ payload, type: START_REQUEST });
 export const endRequest = payload => ({ payload, type: END_REQUEST });
 export const errorRequest = payload => ({ payload, type: ERROR_REQUEST });
@@ -32,10 +28,6 @@ export const loadCart = payload => ({ payload, type: LOAD_CART });
 export const changeCount = payload => ({ payload, type: CHANGE_COUNT });
 export const addToCart = payload => ({ payload, type: ADD_TO_CART });
 export const deleteItem = payload => ({ payload, type: DELETE_ITEM });
-
-// export const changeCount = ({ id, count }) => ({type: changeCountActionName, payload: { id, count }});
-//export const addToCart = ({ id, count }) => ({type: addToCartActionName, payload: { id, count }});
-// export const removeProductFromCart = ({ id }) => ({type: removeProductFromCartActionName, payload: {id}});
 
 /* THUNKS */
 
@@ -139,7 +131,7 @@ export default function reducer(statePart = initialState, action = {}) {
         ...items[index],
         count: fixedCount,
       };
-      console.log(items);
+      //console.log(items);
       return {
         ...statePart,
         data: {

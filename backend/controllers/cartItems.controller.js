@@ -1,13 +1,16 @@
 const CartItem = require('../models/cartItem.model');
+const Product = require('../models/product.model');
 
 exports.getAll = async (req, res) => {
   const items = await CartItem.find().populate('productId');
+  const totalPrice = items.map(i => i.productId.price * i.count).reduce((prev, next) => prev + next, 0);
+  const deliveryPrice = 10;
   try {
     await res.json({
       items: items.map(i => ({count: i.count, product: i.productId})),
-      totalPrice: 0,
-      deliveryPrice: 10,
-      // summaryPrice: totalPrice + deliveryPrice,
+      totalPrice: totalPrice,
+      deliveryPrice: deliveryPrice,
+      summaryPrice: totalPrice + deliveryPrice,
     });
   }
   catch(err) {
@@ -66,7 +69,7 @@ exports.deleteById = async (req, res) => {
     const cart = await(CartItem.findOne({ productId: req.params.id }));
     if(cart) {
       await CartItem.deleteOne({ productId: req.params.id });
-      res.json({ message: 'OK' });
+      res.json({ productId: parseInt(req.params.id) });
     }
     else res.status(404).json({ message: 'Not found...' });
   }
