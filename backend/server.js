@@ -25,8 +25,10 @@ app.use('/api', (req, res) => {
 });
 
 /* REACT WEBSITE */
+// Serve static files from the React app
 app.use(express.static(path.join(__dirname, '../build')));
-app.use('*', (req, res) => {
+
+app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname, '../build/index.html'));
 });
 
@@ -39,7 +41,6 @@ db.once('open', () => {
 db.on('error', err => console.log('Error: ' + err));
 
 /* START SERVER */
-const port = process.env.PORT || 8000;
-app.listen(port, () => {
-  console.log('Server is running on port: '+port);
+app.listen(process.env.PORT || 8000, () => {
+  console.log('Server is running on port: 8000');
 });

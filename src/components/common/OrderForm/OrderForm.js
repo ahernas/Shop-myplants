@@ -105,6 +105,7 @@ class  OrderForm extends React.Component {
             </div>
             <div>
               <Button className={styles.buttonOrder} variant='outline'
+                disabled={!email || ! name || !address}
                 onClick={(e) => {
                   e.preventDefault();
                   submitOrder({ name, email, address, message });
