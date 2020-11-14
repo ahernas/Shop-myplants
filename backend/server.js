@@ -31,7 +31,7 @@ app.use('*', (req, res) => {
 });
 
 /* MONGOOSE */
-mongoose.connect('mongodb://localhost:27017/myPlants', { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect('mongodb+srv://anna-h:new-user@cluster0.5xddi.mongodb.net/myPlants?authSource=admin&replicaSet=atlas-7bio5c-shard-0&readPreference=primary&appname=MongoDB%20Compass&ssl=true', { useNewUrlParser: true, useUnifiedTopology: true });
 const db = mongoose.connection;
 db.once('open', () => {
   console.log('Successfully connected to the database');
