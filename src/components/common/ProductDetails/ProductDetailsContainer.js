@@ -1,10 +1,9 @@
 import React from 'react';
 import { connect } from 'react-redux';
-
+import {withRouter} from 'react-router-dom';
 import ProductDetails from './ProductDetails';
 
 import { getById } from '../../../redux/productDetailsRedux.js';
-import {withRouter} from 'react-router-dom';
 import { getRequest, loadProductRequest, changeAddToCartCount } from '../../../redux/productDetailsRedux';
 import { addToCartRequest } from '../../../redux/cartRedux';
 

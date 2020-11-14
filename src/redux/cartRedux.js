@@ -131,7 +131,6 @@ export default function reducer(statePart = initialState, action = {}) {
         ...items[index],
         count: fixedCount,
       };
-      //console.log(items);
       return {
         ...statePart,
         data: {

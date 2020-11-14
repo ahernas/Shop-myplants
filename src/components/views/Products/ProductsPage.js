@@ -1,7 +1,7 @@
 import React from 'react';
-import styles from './ProductsPage.module.scss';
-
 import ProductViewsWrapper from '../../features/ProductsViewsWrapper/ProductsViewsWrapperContainer';
+
+import styles from './ProductsPage.module.scss';
 
 const ProductsPage = () => (
   <div className={styles.root}>

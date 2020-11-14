@@ -1,10 +1,11 @@
 import React from 'react';
-
-import styles from './ProductView.module.scss';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {faTemperatureHigh, faTint, faSun} from '@fortawesome/free-solid-svg-icons';
 import Button from '../Button/Button';
 import {ProductPropType} from '../PropTypes/ProductPropType';
+
+import styles from './ProductView.module.scss';
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {faTemperatureHigh, faTint, faSun} from '@fortawesome/free-solid-svg-icons';
 
 class ProductView extends React.Component {
   render() {

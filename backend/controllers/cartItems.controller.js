@@ -1,5 +1,4 @@
 const CartItem = require('../models/cartItem.model');
-const Product = require('../models/product.model');
 
 exports.getAll = async (req, res) => {
   const items = await CartItem.find().populate('productId');

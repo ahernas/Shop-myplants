@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import styles from './ProoductBox.module.scss';
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faHeart, faPlus} from '@fortawesome/free-solid-svg-icons';
 

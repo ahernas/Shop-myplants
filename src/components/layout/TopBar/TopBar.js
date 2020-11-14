@@ -1,13 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+import styles from './TopBar.module.scss';
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUser, faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 
-import styles from './TopBar.module.scss';
-
 class TopBar extends React.Component {
-
 
   render() {
     const {company} = this.props;

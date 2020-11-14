@@ -2,6 +2,10 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import {withRouter} from 'react-router-dom';
 import {ProductPropType} from '../PropTypes/ProductPropType';
+import Button from '../Button/Button';
+
+import styles from './ProductDetails.module.scss';
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faPen,
@@ -13,9 +17,6 @@ import {
   faPlus,
   faMinus, faArrowLeft,
 } from '@fortawesome/free-solid-svg-icons';
-
-import styles from './ProductDetails.module.scss';
-import Button from '../Button/Button';
 
 class ProductDetails extends React.Component {
   componentDidMount() {
@@ -157,4 +158,3 @@ ProductDetails.propTypes = {
 };
 
 export default withRouter((props) => <ProductDetails {...props}/>);
-

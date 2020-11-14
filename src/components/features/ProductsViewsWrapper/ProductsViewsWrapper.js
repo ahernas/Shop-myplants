@@ -1,9 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import ProductView from '../../common/ProductView/ProductView';
 
 import styles from './ProductsViewsWrapper.module.scss';
-
-import ProductView from '../../common/ProductView/ProductView';
 
 class ProductsViewsWrapper extends React.Component {
   componentDidMount() {

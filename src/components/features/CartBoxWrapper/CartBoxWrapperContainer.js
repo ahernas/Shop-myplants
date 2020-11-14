@@ -1,5 +1,4 @@
 import { connect } from 'react-redux';
-
 import CartBoxWrapper from './CartBoxWrapper';
 
 import {getCart, getRequests, loadCartRequest} from '../../../redux/cartRedux';

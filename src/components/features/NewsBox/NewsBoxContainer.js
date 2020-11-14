@@ -1,5 +1,4 @@
 import { connect } from 'react-redux';
-
 import NewsBox from './NewsBox';
 
 import { getAll } from '../../../redux/newsRedux';

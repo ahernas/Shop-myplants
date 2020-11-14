@@ -1,9 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-
 import styles from './CartBox.module.scss';
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faMinus, faPlus, faTrashAlt} from '@fortawesome/free-solid-svg-icons';
 import {ProductPropType} from '../PropTypes/ProductPropType';
 

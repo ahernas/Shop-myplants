@@ -1,14 +1,11 @@
 import React from 'react';
+import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import Footer from '../Footer/Footer';
 import Header from '../Header/Header';
 
 import clsx from 'clsx';
-
-import { connect } from 'react-redux';
 import { getViewPort, changeViewPort } from '../../../redux/viewPortRedux';
-
-// import { reduxSelector, reduxActionCreator } from "../../../redux/exampleRedux.js";
 
 import styles from './MainLayout.module.scss';
 
@@ -57,19 +54,13 @@ Component.propTypes = {
 };
 
 const mapStateToProps = state => ({
-//   someProp:reduxSelector(state),
   viewport: getViewPort(state),
 });
-//
+
 const mapDispatchToProps = dispatch => ({
-//   someAction: arg => dispatch(reduxActionCreator(arg)),
   changeViewPort: viewPort => dispatch(changeViewPort(viewPort)),
 });
-//
+
 export const MainLayout = connect(mapStateToProps, mapDispatchToProps) (Component);
 
-// export {
-//   //Component as MainLayout,
-//   Container as MainLayout,
-//   Component as MainLayoutComponent,
-// };
+

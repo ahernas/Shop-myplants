@@ -1,11 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-
 import CartBox from '../../common/CartBox/CartBoxContainer';
 import Button from '../../common/Button/Button';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import styles from './CartBoxWrapper.module.scss';
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faArrowRight} from '@fortawesome/free-solid-svg-icons';
 
 class CartBoxWrapper extends React.Component {

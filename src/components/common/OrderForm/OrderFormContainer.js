@@ -1,10 +1,8 @@
 import { connect } from 'react-redux';
-
 import {withRouter} from 'react-router-dom';
 import OrderForm from './OrderForm';
 
 import { getCart } from '../../../redux/cartRedux';
-import {getById} from '../../../redux/productsRedux';
 import { submitOrderRequest } from '../../../redux/orderRedux';
 
 const mapStateToProps = (state, {id}) => {

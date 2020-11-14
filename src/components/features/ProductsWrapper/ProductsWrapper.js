@@ -1,9 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import ProductBox from '../../common/ProductBox/ProductBox';
 
 import styles from './ProductsWrapper.module.scss';
-
-import ProductBox from '../../common/ProductBox/ProductBox';
 
 class ProductsWrapper extends React.Component {
 

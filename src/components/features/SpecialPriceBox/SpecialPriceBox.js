@@ -1,7 +1,7 @@
 import React from 'react';
+import Button from '../../common/Button/Button';
 
 import styles from './SpecialPriceBox.module.scss';
-import Button from '../../common/Button/Button';
 
 class SpecialPriceBox extends React.Component {
 

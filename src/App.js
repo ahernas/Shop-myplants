@@ -12,8 +12,6 @@ import ProductsPage from './components/views/Products/ProductsPage';
 import ProductPage from './components/views/Product/ProductPage';
 import CartPage from './components/views/Cart/CartPage';
 import OrderPage from './components/views/Order/OrderPage';
-// import NotFound from './components/pages/NotFound/NotFoundPage';
-
 
 class App extends React.Component {
 

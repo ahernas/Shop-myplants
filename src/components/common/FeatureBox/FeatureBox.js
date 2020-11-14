@@ -2,9 +2,9 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-
 import styles from './FeatureBox.module.scss';
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const FeatureBox = ({ active, icon, children }) => (
   <Link to=''>
