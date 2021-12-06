@@ -37,3 +37,38 @@
   border: 20px solid $color-button;
   height: 250px;
 }
+
+@media (max-width: 768px) {
+
+  .description {
+    font-size: 14px;
+    height: 150px;
+    overflow: hidden;
+    margin-bottom: 20px;
+  }
+
+}
+
+@media (max-width: 550px) {
+
+    .imageBox1 {
+
+      img {
+        width: 150%;
+      }
+    }
+
+  .imageBox2 {
+    img {
+      width: 225%;
+    }
+  }
+
+  .description {
+    font-size: 12px;
+    height: 110px;
+    overflow: hidden;
+    margin-bottom: 20px;
+   }
+}
+

@@ -25,14 +25,14 @@
   line-height: 70px;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .root img {
     margin-bottom: 60px;
   }
 }
-@media (max-width: 357px) {
+@media (max-width: 440px) {
   .root img {
-    width: 90px;
+    width: 200px;
   }
 }
 

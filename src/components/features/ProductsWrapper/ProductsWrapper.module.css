@@ -15,5 +15,11 @@
   background-color: #8bb6c0;
   opacity: 0.9;
 }
+@media (max-width: 440px) {
+  .itemBox .wrapper {
+    height: 570px;
+    text-align: center;
+  }
+}
 
 /*# sourceMappingURL=ProductsWrapper.module.css.map */

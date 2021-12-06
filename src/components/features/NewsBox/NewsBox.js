@@ -14,7 +14,7 @@ class NewsBox extends React.Component {
     return (
       <div className='container'>
 
-        <div className='pb-5 row justify-content-around'>
+        <div className='pb-5 row justify-content-around '>
           <div className='col-5 align-items-center d-flex '>
             <div className='col'>
               <div className={styles.title}>{news.information1.title}</div>

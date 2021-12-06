@@ -8,7 +8,7 @@ const initialState = {
     information1: {
       title: 'The most amazing plants',
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-      image: 'https://i.postimg.cc/PrT2KXNb/png.png',
+      image: 'https://i.postimg.cc/85zn56wc/png-plant.png',
     },
     information2: {
       title: 'The best healer in nature',
