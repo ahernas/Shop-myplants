@@ -3,6 +3,9 @@ import PropTypes from 'prop-types';
 
 import styles from './TopBar.module.scss';
 
+import MobileNavigation from './MobileNavigation';
+import Navigation from './Navigation';
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUser, faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 
@@ -14,8 +17,8 @@ class TopBar extends React.Component {
     return (
       <div className={styles.root}>
         <div className='container'>
-          <div className='row justify-content-between'>
-            <div className='row text-left align-items-center'>
+          <div className='row justify-content-around'>
+            <div className={`row text-left align-items-center  ${styles.companyBox}`}>
               <div className={styles.companyName}>{company.name}</div>
               <div className={styles.companyLogo}>
                 <img src={company.logo} alt='image of logo'/>
@@ -23,33 +26,8 @@ class TopBar extends React.Component {
             </div>
             <div className='row text-right'>
               <div className={`col-4 text-right col-sm text-right  ${styles.topMenu}`}>
-                <ul>
-                  <li>
-                    <a href="/">Home</a>
-                  </li>
-                  <li>
-                    <a href="/products">Products</a>
-                  </li>
-                  <li>
-                    <a href="/plantFinder">Plant finder</a>
-                  </li>
-                  <li>
-                    <a href="/aboutUs">About us</a>
-                  </li>
-                  <li>
-                    <a href="/contacts">Contact</a>
-                  </li>
-                  <li>
-                    <a href="/user">
-                      <FontAwesomeIcon className={`icons ${styles.icon}`} icon={faUser}/>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="/cart">
-                      <FontAwesomeIcon className={styles.icon} icon={faShoppingCart}/>
-                    </a>
-                  </li>
-                </ul>
+                <Navigation/>
+                <MobileNavigation/>
               </div>
             </div>
           </div>

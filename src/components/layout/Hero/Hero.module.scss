@@ -31,18 +31,25 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
   .root {
-    img {
-      margin-bottom: 60px;
+    :global(.container) > :global(.row) {
+      background-image: none;
+      background-color: $color-hero;
     }
   }
 }
 
 @media (max-width: 440px) {
   .root {
-    img {
-      width: 200px;
+    .titles {
+      margin-left: 50px;
+    }
+    .subtitle {
+
+    }
+    .title {
+      font-size: 50px;
     }
   }
 }

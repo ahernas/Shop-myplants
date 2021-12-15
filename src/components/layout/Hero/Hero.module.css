@@ -25,14 +25,18 @@
   line-height: 70px;
 }
 
-@media (max-width: 768px) {
-  .root img {
-    margin-bottom: 60px;
+@media (max-width: 1200px) {
+  .root :global(.container) > :global(.row) {
+    background-image: none;
+    background-color: #c1e0df;
   }
 }
 @media (max-width: 440px) {
-  .root img {
-    width: 200px;
+  .root .titles {
+    margin-left: 50px;
+  }
+  .root .title {
+    font-size: 50px;
   }
 }
 

@@ -5,8 +5,6 @@
 
   ul {
     list-style: none;
-    margin: 0;
-    padding: 0;
 
     li {
       display: inline-block;
@@ -25,12 +23,16 @@
     }
   }
 
-  .topMenu ul li {
-    margin-left: 1.5rem;
 
+  .topMenu ul li {
+      margin-left: 20px;
     .icon {
       margin-right: 5px;
     }
+  }
+
+  .companyBox {
+    margin: 0;
   }
 
   .companyName {
@@ -47,18 +49,67 @@
    }
 }
 
-@media (max-width: 768px) {
-  .root {
-    span {
-      display: none;
-    }
+.mobileNavigation {
+  display:none;
+}
 
-    .topMenu ul li {
-      margin-left: 10px;
+.hamburger {
+  right: 0;
+  font-size: 40px;
+  top:20px;
 
-      .icon {
-        margin-right: 2px;
-      }
+}
+
+@media (max-width: 1100px) {
+  .navigationBox {
+    display: none;
+  }
+
+  .mobileNavigation {
+    display: flex;
+    align-items: center;
+
+    .hamburger {
+      position: absolute;
+      cursor: pointer;
+      right: 65%;
+      top:20px;
     }
   }
+
+  nav ul {
+
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 80px;
+    right:5%;
+    align-items: center;
+    z-index: 999;
+    background-color: $color-dark-green;
+    padding-bottom: 10px;
+  }
+
+  .topMenu ul li {
+    width: 130px;
+    height: 40px;
+    background-color: $color-dark-green;
+    padding-right: 10px;
+  }
 }
+
+//@media (max-width: 768px) {
+//  .root {
+//    span {
+//      display: none;
+//    }
+//
+//    .topMenu ul li {
+//      padding-left: 20px;
+//
+//      .icon {
+//        margin-right: 2px;
+//      }
+//    }
+//  }
+//}
