@@ -29,4 +29,18 @@
   height: 400px;
 }
 
+@media (max-width: 992px) {
+  .box {
+    height: auto;
+  }
+
+  .boxText {
+    padding: 10px 10px;
+  }
+
+  .boxImage img {
+    width: 100%;
+  }
+}
+
 /*# sourceMappingURL=SpecialPriceBox.module.css.map */

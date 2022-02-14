@@ -74,14 +74,15 @@
     right: 5%;
     align-items: center;
     z-index: 999;
-    background-color: #7ea497;
+    background-color: #7fa191;
     padding-bottom: 10px;
+    border: 4px solid #485256;
+    border-radius: 20px;
   }
 
   .topMenu ul li {
     width: 130px;
     height: 40px;
-    background-color: #7ea497;
     padding-right: 10px;
   }
 }
