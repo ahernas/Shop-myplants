@@ -54,4 +54,10 @@
   color: #ffffff;
 }
 
+@media (max-width: 550px) {
+  .text1 span, .text2 span {
+    transform: rotate(-270deg);
+  }
+}
+
 /*# sourceMappingURL=ProductView.module.css.map */

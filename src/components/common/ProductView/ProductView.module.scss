@@ -71,3 +71,15 @@
     }
   }
 }
+
+@media (max-width: 550px) {
+
+  .text1, .text2{
+    span {
+      transform: rotate(-270deg);
+    }
+
+  }
+}
+
+
