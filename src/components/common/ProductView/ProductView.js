@@ -15,7 +15,7 @@ class ProductView extends React.Component {
       <div className={'container ' + styles.productViewContainer}>
         <div className={'row ' + styles.productView}>
           <div className={'col align-item-center justify-content-center d-flex ' + styles.information}>
-            <div className={styles.requirement + ' d-flex flex-column align-items-start justify-content-center'}>
+            <div className={'d-flex ' + styles.requirement }>
               <div className={' d-flex align-items-center justify-content-center '}>
                 <div>
                   <FontAwesomeIcon className={styles.font} icon={faTint}/>
@@ -25,7 +25,7 @@ class ProductView extends React.Component {
                   <div className={styles.property}>{water}</div>
                 </div>
               </div>
-              <div className={' d-flex align-items-center justify-content-center pt-3 '}>
+              <div className={' d-flex align-items-center justify-content-center ' + styles.lightBox}>
                 <div>
                   <FontAwesomeIcon className={styles.font} icon={faSun}/>
                 </div>
@@ -34,7 +34,7 @@ class ProductView extends React.Component {
                   <div className={styles.property}>{light}</div>
                 </div>
               </div>
-              <div className={' d-flex align-items-center justify-content-center pt-3 '}>
+              <div className={' d-flex align-items-center justify-content-center ' + styles.temperatureBox}>
                 <div>
                   <FontAwesomeIcon className={styles.font} icon={faTemperatureHigh}/>
                 </div>
@@ -49,7 +49,7 @@ class ProductView extends React.Component {
           <div className={'col d-flex justify-content-center align-items-center ' + styles.plant}>
             <div className={'flex-column d-flex justify-content-end '}>
               <div className={styles.title}>{name}</div>
-              <div>
+              <div className={styles.buttonBox}>
                 <Button href={`/products/${_id}`} className={'mt-4 ' + styles.button} variant='outline'>See plant</Button>
               </div>
             </div>

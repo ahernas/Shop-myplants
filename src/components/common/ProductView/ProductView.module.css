@@ -1,7 +1,10 @@
 .productViewContainer {
   width: 1140px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border-radius: 30px;
-  margin-bottom: 20px;
+  margin: 0 20px 20px 20px;
 }
 .productViewContainer:nth-child(4n) {
   background-color: #8bb6c0;
@@ -39,10 +42,18 @@
   margin-left: 30px;
 }
 
+.requirement {
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+}
 .requirement .font {
   font-size: 40px;
   margin-right: 10px;
   color: #e5e9ea;
+}
+.requirement .lightBox, .requirement .temperatureBox {
+  padding-top: 3px;
 }
 .requirement .boxText .parameter {
   font-size: 18px;
@@ -54,9 +65,71 @@
   color: #ffffff;
 }
 
-@media (max-width: 550px) {
-  .text1 span, .text2 span {
-    transform: rotate(-270deg);
+@media (max-width: 1200px) {
+  .productViewContainer {
+    width: 100%;
+  }
+}
+@media (max-width: 1001px) {
+  .productView {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .requirement {
+    padding: 30px;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .requirement .lightBox.temperatureBox {
+    padding-top: 0;
+  }
+}
+@media (max-width: 768px) {
+  .plant {
+    padding: 30px 30px 0 30px;
+  }
+}
+@media (max-width: 564px) {
+  .requirement .font {
+    font-size: 30px;
+  }
+  .requirement .boxText .parameter, .requirement .boxText .property {
+    font-size: 15px;
+  }
+
+  .plant {
+    padding-left: 30px;
+  }
+  .plant img {
+    width: 200px;
+    height: 200px;
+  }
+}
+@media (max-width: 490px) {
+  .requirement {
+    display: none !important;
+  }
+
+  .plant {
+    flex-direction: column-reverse;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+  .plant .title, .plant .buttonBox {
+    display: flex;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+  .plant .button {
+    margin-bottom: 30px;
+  }
+  .plant img {
+    margin-left: 0 !important;
+    width: 250px;
+    height: 250px;
   }
 }
 
