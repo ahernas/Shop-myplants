@@ -99,9 +99,9 @@ class ProductDetails extends React.Component {
             </div>
           </div>
         </div>
-        <div className={'row mt-4 flex-column ' + styles.orderDetails}>
-          <div className={'d-flex flex-row align-items-center'}>
-            <div className={'d-flex align-items-center justify-content-start ' + styles.amountBox}>
+        <div className={'row mt-4 ' + styles.orderDetails}>
+          <div className={'d-flex align-items-center ' + styles.amountPriceBox}>
+            <div className={'d-flex align-items-center ' + styles.amountBox}>
               <a className={styles.fontOrderBox} onClick={() => changeAddToCartCount(count - 1)}>
                 <FontAwesomeIcon icon={faMinus}/>
               </a>

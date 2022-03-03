@@ -63,6 +63,11 @@
 
 .orderDetails {
   border-radius: 30px;
+  flex-direction: column;
+
+  .amountPriceBox {
+    flex-direction: row;
+  }
 
   .fontOrderBox {
     display: flex;
@@ -86,6 +91,7 @@
     border-radius: 20px;
     margin: 25px 0 15px 0;
     height: 50px;
+    justify-content: flex-start;
   }
 
   .amount {
@@ -113,4 +119,44 @@
   font-size: 20px;
   padding: 30px;
   text-transform: uppercase;
+}
+
+@media (max-width: 600px) {
+
+  .orderDetails {
+
+    .fontOrderBox {
+      width: 20px;
+      height: 20px;
+    }
+
+    .price {
+      width: 100%;
+      padding: 30px;
+      margin-left: 10px;
+      margin-bottom: 40px;
+      margin-right: 10px;
+      font-size: 35px;
+      border-radius: 10px;
+    }
+    .amountBox {
+      padding: 30px;
+      width: 40%;
+      justify-content: center;
+      margin-bottom: 40px;
+      margin-left: 10px;
+      border-radius: 10px;
+      .amount {
+        font-size: 35px;
+      }
+    }
+  }
+  .galleryBox {
+
+    img {
+      width: 125px;
+      height: 200px;
+    }
+  }
+
 }
