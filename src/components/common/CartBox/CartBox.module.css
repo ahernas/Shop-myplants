@@ -2,6 +2,8 @@
   padding: 0 30px;
   border: 2px solid #e5e9ea;
   border-radius: 20px;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .imgBox img {
@@ -39,6 +41,24 @@
   font-size: 30px;
   font-weight: bold;
   color: #656e71;
+}
+
+@media (max-width: 768px) {
+  .product {
+    flex-wrap: wrap;
+    padding: 20px 20px;
+    justify-content: center !important;
+  }
+  .product .imgBox img {
+    height: 150px;
+    width: 150px;
+  }
+  .product .nameBox {
+    display: flex;
+    justify-content: center;
+    padding: 30px 0;
+    font-size: 30px;
+  }
 }
 
 /*# sourceMappingURL=CartBox.module.css.map */
