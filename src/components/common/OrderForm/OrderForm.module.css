@@ -22,11 +22,13 @@
   width: 80px;
   color: #75818b;
   font-size: 15px;
+  flex: 1;
 }
 
 .input {
   width: 450px;
   padding: 20px;
+  flex: 5;
 }
 
 .summaryPrice {
@@ -38,6 +40,21 @@
   font-size: 15px;
   padding: 20px 95px;
   text-transform: uppercase;
+}
+
+@media (max-width: 770px) {
+  .orderBox {
+    width: 100%;
+  }
+
+  .input {
+    width: 300px;
+  }
+}
+@media (max-width: 460px) {
+  .input {
+    width: 100%;
+  }
 }
 
 /*# sourceMappingURL=OrderForm.module.css.map */
