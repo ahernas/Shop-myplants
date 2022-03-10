@@ -15,8 +15,8 @@ class ProductView extends React.Component {
       <div className={'container ' + styles.productViewContainer}>
         <div className={'row ' + styles.productView}>
           <div className={'col align-item-center justify-content-center d-flex ' + styles.information}>
-            <div className={'d-flex ' + styles.requirement }>
-              <div className={' d-flex align-items-center justify-content-center '}>
+            <div className={styles.requirement}>
+              <div className={'d-flex align-items-center justify-content-center '}>
                 <div>
                   <FontAwesomeIcon className={styles.font} icon={faTint}/>
                 </div>

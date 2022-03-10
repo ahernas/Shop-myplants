@@ -43,6 +43,7 @@
 }
 
 .requirement {
+  display: flex;
   flex-direction: column;
   align-items: start;
   justify-content: center;
@@ -110,18 +111,16 @@
 }
 @media (max-width: 490px) {
   .requirement {
-    display: none !important;
+    display: none;
   }
 
   .plant {
     flex-direction: column-reverse;
-    align-items: center !important;
-    justify-content: center !important;
   }
   .plant .title, .plant .buttonBox {
+    text-align: center;
     display: flex;
-    align-items: center !important;
-    justify-content: center !important;
+    justify-content: center;
   }
   .plant .button {
     margin-bottom: 30px;
