@@ -44,7 +44,7 @@ class  OrderForm extends React.Component {
             </div>
           </div>
           <div className={'row pl-3 '}>
-            <FormGroup className={'d-flex flex-row align-items-center'}>
+            <FormGroup className={'col d-flex flex-row align-items-center'}>
               <Label className={'m-0 pr-2 ' + styles.label} for="clientName">Name:</Label>
               <Input
                 className={styles.input}
@@ -58,7 +58,7 @@ class  OrderForm extends React.Component {
             </FormGroup>
           </div>
           <div className={'row pl-3 '}>
-            <FormGroup className={'d-flex flex-row align-items-center'}>
+            <FormGroup className={'col d-flex flex-row align-items-center'}>
               <Label className={'m-0 pr-2 ' + styles.label} for="clientEmail">Email:</Label>
               <Input
                 className={styles.input}
@@ -72,7 +72,7 @@ class  OrderForm extends React.Component {
             </FormGroup>
           </div>
           <div className={'row pl-3 mb-3 '}>
-            <FormGroup className={'d-flex flex-row align-items-center'}>
+            <FormGroup className={' col d-flex flex-row align-items-center'}>
               <Label className={'m-0 pr-2 ' + styles.label} for="clientAddress">Address:</Label>
               <Input
                 className={styles.input}
@@ -86,7 +86,7 @@ class  OrderForm extends React.Component {
             </FormGroup>
           </div>
           <div className={'row pl-3 mb-3 '}>
-            <FormGroup className={'d-flex flex-row align-items-center'}>
+            <FormGroup className={'col d-flex flex-row align-items-center'}>
               <Label className={'m-0 pr-2 ' + styles.label} for="clientMessage">Message:</Label>
               <Input
                 className={styles.input}

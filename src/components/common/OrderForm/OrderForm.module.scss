@@ -19,22 +19,16 @@
   color: $color-button-text;
 }
 
-.formGroup {
-
-}
-
 .label {
   text-transform: uppercase;
   width: 80px;
   color: $color-button-text;
   font-size: 15px;
-  flex: 1;
 }
 
 .input {
-  width: 450px;
+  width: 100%;
   padding: 20px;
-  flex: 5;
 }
 
 .summaryPrice {
@@ -52,17 +46,6 @@
 @media (max-width: 770px) {
   .orderBox {
     width: 100%;
+
   }
-
-  .input {
-    width: 300px;
-  }
-}
-
-@media (max-width: 460px) {
-
-  .input {
-    width: 100%;
-  }
-
 }
