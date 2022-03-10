@@ -1,6 +1,9 @@
 {
   "name": "shop-myplants",
   "version": "0.1.0",
+  "engines": {
+    "node": "12.x"
+  },
   "private": true,
   "scripts": {
     "start": "cd backend/ && nodemon server.js",
